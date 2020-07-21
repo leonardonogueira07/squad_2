@@ -1,2 +1,2 @@
-# squad_2
+# HashtagFinder
 Projeto Front End - squad_2
