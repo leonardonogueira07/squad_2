@@ -1,0 +1,82 @@
+.containerGrupo {
+    top: 788px;
+    left: 0px;
+    width: 1920px;
+    height: 3362px;
+    background: #0A1744 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+
+
+.containerImagens {
+    top: 1173px;
+    left: 140px;
+    width: 520px;
+    height: 1583px;
+    opacity: 1;
+    background-color: #1E3E7B17;
+
+}
+
+
+.containerTexto  { 
+    top: 1388px;
+    left: 161px;
+    width: 190px;
+    height: 51px;
+  
+}
+.containerImagens ul li img {
+    list-style: none;
+    top: 1173px;
+    left: 140px;
+    width: 287px;
+    height: 287px;
+    background: transparent url('img/photo-of-person-walking-on-desert-during-evening-1987097.png') 0% 0% no-repeat padding-box;
+    border-radius: 21px;
+    opacity: 1; 
+    
+}
+
+#texto {
+    
+    top: 911px;
+    left: 234px;
+    width: 59px;
+    height: 12px;
+    font: Regular 10px/11px Rubik;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+.containerTweets{
+    top: 1173px;
+left: 830px;
+width: 889px;
+height: 2671px;
+opacity: 1;
+float: right;
+
+}
+.containerTweets ul li {
+    list-style: none;
+    
+    top: 1173px;
+    left: 830px;
+    width: 889px;
+    height: 229px;
+    background: #1E3E7B17 0% 0% no-repeat padding-box;
+    border: 1px solid #FFFFFF24;
+    border-radius: 15px;
+    opacity: 1;
+}
+
+
+.containerTweets ul li img {
+    top: 1215px;
+    left: 880px;
+    width: 82px;
+    height: 82px;
+
+}
