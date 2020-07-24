@@ -1,0 +1,92 @@
+[33mcommit 1ef7f078fc02eb15e7f9bf89935b5945782d8273[m[33m ([m[1;36mHEAD[m[33m, [m[1;31morigin/master[m[33m, [m[1;32mmaster[m[33m, [m[1;32mlist[m[33m, [m[1;32mleonardo[m[33m)[m
+Author: Elias Oliveira <54728179+eMatheus23@users.noreply.github.com>
+Date:   Thu Jul 23 18:53:04 2020 -0300
+
+    Correção index.html
+
+[33mcommit adcc7292760b08e18fca401c541bdef7201e06de[m
+Author: Elias Oliveira <54728179+eMatheus23@users.noreply.github.com>
+Date:   Thu Jul 23 18:49:54 2020 -0300
+
+    Correção index.html
+
+[33mcommit c158d7ef66e980a7bcb501471ff9eaef2c8843c5[m
+Merge: 750d0c1 b2925bf
+Author: Geice Gomes <60244980+Sogmesmo@users.noreply.github.com>
+Date:   Thu Jul 23 18:47:53 2020 -0300
+
+    Merge pull request #1 from Lenog07/Elias_Geice
+    
+    Elias Geice
+
+[33mcommit b2925bfb0aaf4f5505528dc7137360cf6ad17c5c[m
+Author: Geice Gomes <sogmesmo@gmail.com>
+Date:   Thu Jul 23 18:41:06 2020 -0300
+
+    Inclusao parte Elias e Geice
+
+[33mcommit 56cbee62807c2e15e1c4317e6f6ce39fbb08079f[m
+Author: Geice Gomes <sogmesmo@gmail.com>
+Date:   Thu Jul 23 18:17:01 2020 -0300
+
+    Mudanças
+
+[33mcommit 750d0c15e29b0874301a600cf07982375fcf4c84[m
+Author: eMatheus23 <eliasmatheus@hotmail.com>
+Date:   Wed Jul 22 16:30:20 2020 -0300
+
+    Espaço abaixo das fotos
+
+[33mcommit 0de92af6fd44838f0af3164f39079dffd63e51c4[m
+Author: eMatheus23 <eliasmatheus@hotmail.com>
+Date:   Wed Jul 22 16:06:09 2020 -0300
+
+    Modificações
+
+[33mcommit ed558f9fefc1bbaa1fb5e00410fdf92ca4247d50[m
+Author: eMatheus23 <eliasmatheus@hotmail.com>
+Date:   Wed Jul 22 14:15:54 2020 -0300
+
+    Deixando o HTML responsivo
+
+[33mcommit cdb5c00b184a2b2b3e9c3a4565a87314bb1f92aa[m
+Author: eMatheus23 <eliasmatheus@hotmail.com>
+Date:   Tue Jul 21 16:04:06 2020 -0300
+
+    Imagens das buscas
+
+[33mcommit e4db43f7a50d7600b7374730e1fcd128de86526e[m
+Author: eMatheus23 <eliasmatheus@hotmail.com>
+Date:   Tue Jul 21 15:39:02 2020 -0300
+
+    Imagens das buscas
+
+[33mcommit 0850283e5998157367fd58fd401bb480603f5efa[m
+Author: eMatheus23 <eliasmatheus@hotmail.com>
+Date:   Tue Jul 21 13:46:13 2020 -0300
+
+    Envio de imagens e svgs do projeto
+
+[33mcommit 9219d5a8cf5a30f18ea2e8062f349040f0213b4e[m
+Author: eMatheus23 <eliasmatheus@hotmail.com>
+Date:   Tue Jul 21 01:13:59 2020 -0300
+
+    Proposta de estrutura do HTML principal
+
+[33mcommit 0632eee5dc1f1f6c8f9e8c5f9f281fc91c405047[m
+Author: Geice Gomes <60244980+Sogmesmo@users.noreply.github.com>
+Date:   Mon Jul 20 23:45:10 2020 -0300
+
+    Update README.md
+
+[33mcommit 9826103693dd44dc9097687362b1ab4939ab4dbe[m
+Author: Geice Gomes <60244980+Sogmesmo@users.noreply.github.com>
+Date:   Mon Jul 20 23:07:23 2020 -0300
+
+    Update README.md
+
+[33mcommit e316ed5eda1f9f7a1c9961d6d775104ab90463c2[m
+Author: Leonardo Junio  Rosa Nogueira <62269954+Lenog07@users.noreply.github.com>
+Date:   Mon Jul 20 22:42:23 2020 -0300
+
+    Initial commit
