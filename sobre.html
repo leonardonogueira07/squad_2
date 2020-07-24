@@ -18,15 +18,20 @@
     <!--Corpo da página, com estilo provisório-->
     <body style="background-color: #0A1744; color: #FCFCFC;">
 
-        <!--Imagem de fundo, com estilo provisório-->
+        <!--Imagem de fundo, com estilo provisório
         <img
             style="width: 100%"
             src="imagens/about-hero-bg.jpg"
         >
-
+        -->
+        
         <!--Topo - Importado por iframe-->
         <header>
-            <iframe src="menu.html" name="topoBusca" scrolling="no"></iframe>
+            <iframe 
+                src="menu.html" name="topoBusca" scrolling="no" style="border: 0;"
+                width="100%" height="100px" frameborder="0"
+            >
+            </iframe>
         </header>
 
 
@@ -214,9 +219,11 @@
         </section>
 
         <!--Rodapé - Importado por iframe-->
-        <footer>
-            <iframe src="rodape.html" name="rodape" scrolling="no"></iframe>
-        </footer>
+        <footer id="rodape">
+            <div class="txtRodape">
+                <p>@Cocreare 2020. Todos os direitos reservados</p>
+            </div>
+        </footer>  
         
     </body>
 </html>
