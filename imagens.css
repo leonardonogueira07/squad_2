@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,700;1,500&display=swap');
+
+.containerGaleria {
+    width: 619px;
+    height: auto;
+    float: left;
+    margin-right: ;
+}
+.containerGaleria img {
+    width: 287px;
+    height: 287px;
+    border-radius: 21px;
+}
+
+.containerImagem {
+    position: relative; 
+    text-align: left;
+    color: white;
+    width: 287px;
+    height: 287px;
+    margin: 0px;
+    float: left;
+}
+.texto {
+    position: absolute;
+    bottom: 25px;
+    left: 20px;
+    width: 190px;
+    height: 51px;
+}
+.degrade {
+    width: 287px;
+    height: 117px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background:transparent linear-gradient(180deg, #00000000 0%, #000000 100%) 0% 0% no-repeat padding-box;
+    border-radius: 0px 0px 21px 21px;
+}
+
+.textoPostado {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    color: white;
+    margin-bottom: 7px;
+}
+.textoTwitter {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    font-size: 21px;
+    color: white;
+}
+ul {
+    list-style-type: none;
+}
+.containerTweets {
+    width: 889px;
+    height: 2671px;
+}
+footer {
+    
+}
