@@ -1,7 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,700;1,500&display=swap');
+/* CSS do conteiner da dupla Elias e Geice*/
 
-.containerGaleria {
-    width: 619px;
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,700;1,500&display=swap'); 
+/*Importa a fonte da página (Rubik) do google fonts */
+
+h3 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    text-align: center;
+    letter-spacing: 1.6px;
+}
+
+.containerGaleria { 
+    width: 699px; 
     height: auto;
     float: left;
     margin-right: 40px;
@@ -18,7 +29,8 @@
     color: white;
     width: 287px;
     height: 287px;
-    margin: 0px;
+    margin-left: 40px;
+    margin-bottom: 40px;
     float: left;
 }
 .texto {
@@ -29,6 +41,7 @@
     height: 51px;
 }
 .degrade {
+    /* Cria a faixa em degrade escuro na parte de baixo das imagens */
     width: 287px;
     height: 117px;
     position: absolute;
@@ -38,14 +51,14 @@
     border-radius: 0px 0px 21px 21px;
 }
 
-.textoPostado {
+.textoPostadoPor {
     font-family: 'Rubik', sans-serif;
     font-weight: 500;
     font-size: 17px;
     color: white;
     margin-bottom: 7px;
 }
-.textoTwitter {
+.textoTwitterUser {
     font-family: 'Rubik', sans-serif;
     font-weight: 700;
     font-size: 21px;
@@ -54,7 +67,64 @@
 ul {
     list-style-type: none;
 }
-.containerTweets {
+
+/* Parte dos Twits */
+.containerGaleriaTweets {
     width: 889px;
     height: 2671px;
+    position: relative;
+    float: left;
+}
+.containerTweets {
+    width: 837px;
+    height: 185px;
+    padding-top: 42PX;
+    padding-left: 50px;
+    background: #1E3E7B17;
+    border: 1px solid #FFFFFF24;
+    border-radius: 15px;
+    margin-bottom: 40px;
+}
+.containerTweets img {
+   border-radius: 50%;
+   width: 82px;
+   height: 82px;
+   float: left;
+   margin-right: 28px;
+}
+.containerTextosTwitter {
+    width: 652px;
+    height: 145px;
+    float: left;
+
+}
+.userName {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    font-size: 27px;
+    float: left;
+    margin-right: 17px;
+}
+.twitterUserName {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    opacity: 0.43;
+    margin-top: 5px;
+    
+}
+.textoTweet {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 19px;
+    width: 652px;
+    height: 72px;
+    margin-top: 7px;
+    letter-spacing: 0.23px;
+}
+.linkTwitter {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    color: #72EFDB;
 }
