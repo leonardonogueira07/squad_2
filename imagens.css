@@ -4,7 +4,7 @@
     width: 619px;
     height: auto;
     float: left;
-    margin-right: ;
+    margin-right: 40px;
 }
 .containerGaleria img {
     width: 287px;
@@ -57,7 +57,4 @@ ul {
 .containerTweets {
     width: 889px;
     height: 2671px;
-}
-footer {
-    
 }
