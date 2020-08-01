@@ -1,0 +1,45 @@
+.desktop {
+    display: inline;
+}
+
+@media (min-width: 414px) {
+    .mobile {
+        display: inline;
+    }
+    .mobile {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .tweetMobile {
+        top: 697px;
+        left: 88px;
+        width: 50%;
+        height: 29px;
+        text-align: center;
+        font: Medium 16px/22px Rubik;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+        opacity: 1;
+    }
+    .tweetMobile:hover {
+        color: #72EFDB;
+    }
+    .imagensMobile {
+        top: 697px;
+        left: 268px;
+        width: 50%;
+        height: 19px;
+        color: var(--unnamed-color-ffffff);
+        text-align: center;
+        font: Regular 16px/22px Rubik;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+        opacity: 1;
+    }
+    .imagensMobile:hover {
+        color: #72EFDB;
+    }
+}
