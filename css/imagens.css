@@ -118,6 +118,7 @@ h3 {
 
 .containerTweets {
     max-width: 889px;
+    min-width: 372px;
     width: 100%;
     height: 185px;
     padding-top: 20px;
@@ -128,22 +129,32 @@ h3 {
     border-radius: 15px;
     margin-bottom: 40px;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .containerTweets img {
     border-radius: 50%;
-    width: 82px;
-    height: 82px;
+    max-width: 87px;
+    max-height: 87px;
+    min-width: 54px;
+    min-height: 54px;
+    /* flex: 10%;*/
+    width: 8vw;
+    height: 8vw;  
     float: left;
     margin-right: 28px;
 }
 
 .containerTextosTwitter {
-    width: 100%;
+    max-width: 652px;
+    width: 40vw;
     height: 145px;
     display: flex;
+    flex: 70%;
     flex-wrap: wrap;
     align-items: flex-end;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .userName {
@@ -152,6 +163,7 @@ h3 {
     font-size: 27px;
     float: left;
     margin-right: 17px;
+    width: 22%;
 }
 
 .twitterUserName {
@@ -160,6 +172,7 @@ h3 {
     font-size: 20px;
     opacity: 0.43;
     margin-top: 0px;
+    width: 22%;
 }
 
 .textoTweet {
@@ -172,6 +185,8 @@ h3 {
     letter-spacing: 0.23px;
     display: flex;
     flex-wrap: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .linkTwitter {
