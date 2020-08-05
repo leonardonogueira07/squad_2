@@ -11,10 +11,11 @@
     }
     .linha {
         top: 726px;
-        left: 44px;
-        width: 332px;
-        border: 3px solid #FFFFFF;
-        opacity: 10%;
+        left: 24px;
+        width: 368px;
+        height: 0px;
+        border: 1px solid #41558E;
+        opacity: 0.66;
     }
     .tweetMobile {
         width: 50%;
