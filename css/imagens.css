@@ -81,12 +81,47 @@ h3 {
     float: left;
 }
 
+/* Textos das imagens*/
 .texto {
     position: absolute;
-    bottom: 25px;
+    bottom: 15px;
     left: 20px;
     width: 75%;
     height: 20%;
+    display: flex;
+    flex-direction: column;
+    font-size: 100%;
+}
+
+@media only screen and (max-width: 1350px) {
+    .texto {
+        font-size: 80%;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    .texto {
+        font-size: 65%;
+    }
+}
+
+
+.textoPostadoPor {
+    font-weight: 500;
+    font-size: 1em;
+    color: white;
+    margin-bottom: 7px;
+}
+
+.textoTwitterUser {
+    font-weight: 700;
+    font-size: 1.35em;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: left;
+    flex-shrink: 100%;
 }
 
 .degrade {
@@ -100,27 +135,6 @@ h3 {
     background: transparent linear-gradient(180deg, #00000000 0%, #000000 100%) 0% 0% no-repeat padding-box;
     border-radius: 0px 0px 1.2vw 1.2vw;
 }
-
-.textoPostadoPor {
-    font-family: 'Rubik', sans-serif;
-    font-weight: 500;
-    font-size: 17px;
-    color: white;
-    margin-bottom: 7px;
-}
-
-.textoTwitterUser {
-    font-family: 'Rubik', sans-serif;
-    font-weight: 700;
-    font-size: 21px;
-    width: 100vw;
-    color: white;
-    display: flex;
-    flex-wrap: wrap;
-    justify-items: left;
-    flex-shrink: 100%;
-}
-
 
 /* Parte dos Tweets */
 
@@ -200,7 +214,7 @@ h3 {
     margin-top: 0px;
 }
 
-.textoTweet {
+.textoTweet { 
     font-weight: 500;
     font-size: 15px;
     width: 100%;
