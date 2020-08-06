@@ -1,10 +1,28 @@
-@media only screen and (max-width: 700px) {
+@media (max-width: 1300px) {
+    :root {
+        font-size: 45%;
+    }
+}
+
+@media (max-width: 1000px){
+    :root {
+        font-size: 35%;
+    }
+}
+
+@media (max-width: 700px) {
+    :root {
+        font-size: 50%;
+    }
     .desktop {
         display: none;
     }
     .mobile {
         width: 90vw;
+        font-size: 3rem;
+        font-weight: 400;
 
+        align-self: center;
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
@@ -24,42 +42,42 @@
     }
     .tweetMobile {
         width: 50%;
-        height: 29px;
         text-align: center;
-        font: Medium 16px/22px Rubik;
-        letter-spacing: 0px;
+
         color: #FFFFFF;
+        
+        padding-bottom: 9.5px;
         border-bottom: 3px;
-        padding-bottom: 44px;
         z-index: 2;
     }
     .tweetMobile:hover {
         color: #72EFDB;
         border-bottom: 3px solid #72EFDB;
         ;
+        font-weight: 700;
     }
     .imagensMobile {
         width: 50%;
-        height: 29px;
+        /* height: 29px; */
         text-align: center;
-        font: Regular 16px/22px Rubik;
-        letter-spacing: 0px;
         color: #FFFFFF;
+
+        padding-bottom: 9.5px;
         border-bottom: 3px;
-        padding-bottom: 44px;
         z-index: 2;
     }
     .imagensMobile:hover {
         color: #72EFDB;
         border-bottom: 3px solid #72EFDB;
+        font-weight: 700;
     }
     .containerGrupo {
         flex-direction: column;
         align-items: center;
     }
     .containerGaleria {
-        margin-top: 10px;
-        margin-left: 0px;
+        margin-top: 8.93rem;
+        margin-right: 0px;
         width: 90vw;
     }
     .containerGaleria img {
@@ -70,18 +88,21 @@
     }
     .containerGaleriaTweets {
         width: 90vw;
+        margin-top: 8.93rem;
     }
     .texto {
         font-size: 50%;
     }
-    .containerTweets {
-        ;
+     .containerTweets {
+        height: 31vw;
+        padding: 5vw;
+        font-size: 40%;
+        /*
         width: 372px;
-        height: 128px;
-        padding: 2px;
+        
         justify-content: center;
-        align-items: center;
-    }
+        align-items: center; /
+    } 
     .userName {
         font-weight: 700;
         font-size: 12px;
@@ -93,13 +114,14 @@
         opacity: 0.43;
         margin-top: 0px;
     }
-    .containerTextosTwitter {
+    /* .containerTextosTwitter {
+        height: 84px;
         top: 802px;
         left: 105px;
         width: 248px;
-        height: 84px;
+        
         opacity: 1;
-    }
+    } 
     .textoTweet {
         margin: 0;
         height: 20px;
@@ -109,5 +131,49 @@
         flex-wrap: wrap;
         overflow: hidden;
         text-overflow: ellipsis;
+    } */
+}
+
+@media (max-width: 550px) {
+    :root {
+        font-size: 42%;
+    }
+}
+
+
+@media (max-width: 440px) {
+    :root {
+        font-size: 35%;
+    }
+    .mobile {
+        font-size: 2.5rem;
+    }
+    .containerTweets {
+        padding: 2.7rem;
+        padding-top: 3.7rem;
+        padding-right: 5rem;
+        border-radius: 1rem;
+    }
+    .containerTweets img {
+        width: 9.6rem;
+        height: 9.6rem;
+    }
+    .userName {
+        font-size: 2.1rem;
+    }
+    .twitterUserName {
+        font-size: 1.5rem;
+    }
+    .linkTwitter {
+        font-size: 1.7rem;
+    }
+}
+
+@media (max-width: 380px) {
+    :root {
+        font-size: 30%;
+    }
+    .mobile {
+        font-size: 2.5rem;
     }
 }
