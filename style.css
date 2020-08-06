@@ -1,0 +1,182 @@
+*{ margin: 0; padding: 0;}  
+body, h1, p {font-family: 'Rubik', Regular;}
+
+.logo {
+    display: flex;
+    text-decoration: none; 
+    color: white;
+    font-size: 1.5rem;
+    text-align: left;
+    margin-left: 20px;
+    opacity: 0.85;
+}
+
+.menu {
+    background-color: #0A1744;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}   
+.topicos {
+    display: flex;
+    list-style-type: none;
+}
+.topicos li {   
+    display: flex;
+    padding: 5px;
+}
+.topicos li a {
+    padding: 7px;
+    text-indent: 25px;
+    font-size: 0.7rem;    
+    letter-spacing: 2.55px;
+    text-decoration: none;    
+}
+.home {
+    background-image: url('svg/icon-info-circle.svg');
+    background-position: 12px;
+    background-size: 9px;
+    background-repeat: no-repeat;
+    background-color: rgba(114, 239, 219, 1);
+    border: 1px;
+    border-radius: 20px;
+    width: 70px;
+    color: black;    
+    margin-right: 20px;
+}
+
+
+
+.content{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-image: url("imagens/hero-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+.imagem-fundo {
+    width: 420px;
+    min-width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #18326B 0% 0% no-repeat padding-box;
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    border-radius: 15px;
+    padding: 20px;
+}
+.formulario{
+    font-family: rubik-bold;
+    display: flex;
+    padding:20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+    position: relative;
+}
+.titulo-formulario{
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 60px;
+    color: #72EFDB;
+    font-size: 40px;
+}
+.corpo-formulario form{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+}
+.corpo-formulario form input{
+    width: 25vw;
+    margin-bottom: 25px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom-width: 1px;
+    border-color: azure;
+    background-color: transparent;
+    color: white;
+}
+.botao-acessar{
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.botao-acessar button{
+    background: #72EFDB 0% 0%  padding-box;
+    border-radius: 34px;
+    width: 170px;
+    font: Medium 19px/40px Rubik;
+    letter-spacing: 0.57px;
+    color: #0B1741;
+    text-transform: uppercase;
+    opacity: 1;
+    padding: 10px;
+    font-family: rubik-bold;
+    margin-bottom: 10px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+}
+::-webkit-input-placeholder{
+    color: white;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+
+
+@media (max-width: 860px) and (orientation: landscape) {
+    .menu {
+        height: 60px;
+    }
+    .imagem-fundo {
+        width: 50vw;
+        height: 70vh;
+        margin-top: 80px;
+    }
+    ::-webkit-input-placeholder{
+        font-size: 13px;
+    }
+    .titulo-formulario{
+        text-align: center;
+        letter-spacing: 2px;
+        margin-bottom: 10px;
+        color: #72EFDB;
+        font-size: 30px;
+    }
+    .corpo-formulario form input {
+        width: 40vw;
+        margin-top: 20px;
+        margin-bottom: 17px;
+        border-bottom-width: 1px;
+    }
+} 
+@media (max-width: 479px) { 
+    .imagem-fundo{
+        width: 45vw;
+        height: 45vh;
+    }
+    ::-webkit-input-placeholder{
+        font-size: 15px;
+    }
+    .corpo-formulario form input {
+        width: 60vw;
+        margin-bottom: 30px;
+        border-bottom-width: 1px;
+    }
+}
