@@ -217,6 +217,13 @@ h3 {
     margin-top: 0px;
 }
 
+.userName {
+    top: 802px;
+    left: 105px;
+    width: 60px;
+    height: 14px;
+}
+
 .textoTweet {
     font-weight: 500;
     font-size: 15px;

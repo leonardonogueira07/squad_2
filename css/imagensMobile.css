@@ -55,7 +55,16 @@
         margin-left: 0px;
         width: 90vw;
     }
+    .containerGaleria img {
+        border-radius: 4.7vw;
+    }
+    .degrade {
+        border-radius: 0px 0px 4.7vw 4.7vw;
+    }
     .containerGaleriaTweets {
         width: 90vw;
+    }
+    .texto {
+        font-size: 50%;
     }
 }
