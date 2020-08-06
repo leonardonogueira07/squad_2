@@ -67,4 +67,40 @@
     .texto {
         font-size: 50%;
     }
+    .containerTweets {
+        ;
+        width: 372px;
+        height: 128px;
+        padding: 2px;
+        justify-content: center;
+        align-items: center;
+    }
+    .userName {
+        font-weight: 700;
+        font-size: 12px;
+        margin-right: 13px;
+    }
+    .twitterUserName {
+        font-weight: 500;
+        font-size: 15px;
+        opacity: 0.43;
+        margin-top: 0px;
+    }
+    .containerTextosTwitter {
+        top: 802px;
+        left: 105px;
+        width: 248px;
+        height: 84px;
+        opacity: 1;
+    }
+    .textoTweet {
+        margin: 0;
+        height: 20px;
+        font-size: 50%;
+        letter-spacing: 0.23px;
+        display: flex;
+        flex-wrap: wrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
 }
