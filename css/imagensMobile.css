@@ -1,8 +1,10 @@
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 700px) {
     .desktop {
         display: none;
     }
     .mobile {
+        width: 90vw;
+
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
@@ -13,7 +15,7 @@
     .linha {
         top: -2px; 
         /* left: 24px; */
-        width: 368px;
+        width: 100vw;
         height: 0px;
         border: 1px solid #41558E;
         opacity: 0.66;

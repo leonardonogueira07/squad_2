@@ -183,15 +183,17 @@ h3 {
 }
 
 .containerTextosTwitter {
-    max-width: 652px;
+    max-width: 70%;
     width: 40vw;
     height: 145px;
+
     display: flex;
     flex: 70%;
     flex-wrap: wrap;
     align-items: flex-end;
     overflow: hidden;
     text-overflow: ellipsis;
+
     font-family: 'Rubik', sans-serif;
 }
 
