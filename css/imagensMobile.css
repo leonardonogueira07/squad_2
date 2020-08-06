@@ -8,14 +8,17 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
+        position: relative;
     }
     .linha {
-        top: 726px;
-        left: 24px;
+        top: -2px; 
+        /* left: 24px; */
         width: 368px;
         height: 0px;
         border: 1px solid #41558E;
         opacity: 0.66;
+        position: relative;
+        z-index: 1;
     }
     .tweetMobile {
         width: 50%;
@@ -26,6 +29,7 @@
         color: #FFFFFF;
         border-bottom: 3px;
         padding-bottom: 44px;
+        z-index: 2;
     }
     .tweetMobile:hover {
         color: #72EFDB;
@@ -41,6 +45,7 @@
         color: #FFFFFF;
         border-bottom: 3px;
         padding-bottom: 44px;
+        z-index: 2;
     }
     .imagensMobile:hover {
         color: #72EFDB;
