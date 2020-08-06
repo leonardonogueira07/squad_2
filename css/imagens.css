@@ -69,9 +69,6 @@ h3 {
     /* padding-right: 6.5%; */
 }
 
-.coluna#coluna2 {
-    /* padding-right: 0; */
-}
 
 .containerImagem {
     position: relative;
@@ -217,16 +214,6 @@ h3 {
     margin-top: 0px;
 }
 
-<<<<<<< HEAD
-/* .userName {
-    top: 802px;
-    left: 105px;
-    width: 60px;
-    height: 14px;
-} */
-
-=======
->>>>>>> 9ccc7750399d9eed613f7c89c98404eace09e8a5
 .textoTweet {
     font-weight: 500;
     font-size: 15px;
