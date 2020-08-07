@@ -57,10 +57,22 @@ body, h1, p {font-family: 'Rubik', Regular;}
     border: 1px;
     border-radius: 25px;
     width: 98px;
-    color: black;    
+    color: black;
+    right: 15px;    
 }
 .login {
     background-image: url('../svg/icon-user-alt.svg');
+    background-position: 15px;
+    background-size: 10px;
+    background-repeat: no-repeat;
+    background-color: rgba(30, 62, 123, 1);
+    border: 1px;
+    border-radius: 25px;
+    width: 98px;
+    color: white;   
+}
+.sair {
+    background-image: url('../svg/icon-power-off.svg');
     background-position: 15px;
     background-size: 10px;
     background-repeat: no-repeat;
