@@ -143,14 +143,13 @@
 
 @media (max-width: 440px) {
     :root {
-        font-size: 35%;
+        font-size: 40%;
     }
     .mobile {
         font-size: 2.5rem;
     }
     .containerTweets {
-        padding: 2.7rem;
-        padding-top: 3.7rem;
+        padding: 2.0rem;
         padding-right: 5rem;
         border-radius: 1rem;
     }
@@ -171,7 +170,7 @@
 
 @media (max-width: 380px) {
     :root {
-        font-size: 30%;
+        font-size: 32%;
     }
     .mobile {
         font-size: 2.5rem;

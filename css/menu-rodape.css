@@ -3,10 +3,10 @@ body, h1, p {font-family: 'Rubik', Regular;}
 
 /*--------LOGOTIPO--------*/
 .logo {
-    display: flex;
     height: 2.5vw;
     min-height: 23px;    
     opacity: 0.85; 
+    margin-left: 10px;
 }
 /*--------MENU--------*/
 .menu {
@@ -33,11 +33,23 @@ body, h1, p {font-family: 'Rubik', Regular;}
     padding: 8px;
     text-align: right;
     font-size: 13px;    
+    text-transform: uppercase;
     letter-spacing: 2.55px;
     text-decoration: none;   
 }
 .sobre {
     background-image: url('../svg/icon-info-circle.svg');
+    background-position: 15px;
+    background-size: 10px;
+    background-repeat: no-repeat;
+    background-color: rgba(114, 239, 219, 1);
+    border: 1px;
+    border-radius: 25px;
+    width: 98px;
+    color: black;    
+}
+.home {
+    background-image: url('../svg/icon-home.svg');
     background-position: 15px;
     background-size: 10px;
     background-repeat: no-repeat;
@@ -82,7 +94,7 @@ body, h1, p {font-family: 'Rubik', Regular;}
     padding-top: 20px;    
 }
 /*--------BUSCA--------*/
-input{
+.input {
     background-image: url("../svg/icon-search.svg");
     background-repeat: no-repeat;
     background-color: rgba(30, 62, 123, 1);
@@ -120,13 +132,9 @@ input{
 }
 
 /*RESPONSIVIDADE*/  
-@media (max-width: 960px) {
+@media (max-width: 960px) {    
     .menu {
         height: 55px;
-    }
-    .sobre, .login {
-        background-position: 11px 14px;
-        height: 35px;
     }
     .hero-text {
         padding-top: 80px;
@@ -142,20 +150,17 @@ input{
         height: 52px;
     }
 }
-@media (max-width: 550px) {
-    
-    .topicos {
-        margin-right: 20px;
-    }
+@media (max-width: 550px) {   
+
     .topicos li a {
         font-size: 11px;
-        padding-top: 8px;
+        
     }
-    .sobre, .login {
+    .sobre, .login, .home {
         background-position: 7px 9px;
         height: 27px;
         width: 80px;
-    }   
+    } 
     .hero-image {
         display: flex;
         flex-direction: column;
@@ -191,3 +196,21 @@ input{
         font-size: 10px;
     }
 }
+@media (max-width: 288px) {
+    .logo {
+        width: 35vw;
+    }
+    .hero-text h1 {
+        font-size: 25px;
+    }
+    .hero-text p {
+        font-size: 12px;
+    }
+    .topicos li a{
+        font-size: 10px;
+    }
+    .home, .login, .sobre {
+        width: 75px;
+        height: 26px;
+    }
+} 

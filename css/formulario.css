@@ -1,53 +1,4 @@
-*{ margin: 0; padding: 0;}  
-body, h1, p {font-family: 'Rubik', Regular;}
-/*--------LOGOTIPO--------*/
-.logo {
-    display: flex;
-    text-decoration: none; 
-    color: white;
-    font-size: 1.5rem;
-    text-align: left;
-    margin-left: 20px;
-    opacity: 0.85;
-}
-/*--------MENU--------*/
-.menu {
-    background-color: #0A1744;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 80px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-}   
-.topicos {
-    display: flex;
-    list-style-type: none;
-}
-.topicos li {   
-    display: flex;
-    padding: 5px;
-}
-.topicos li a {
-    padding: 7px;
-    text-indent: 25px;
-    font-size: 0.7rem;    
-    letter-spacing: 2.55px;
-    text-decoration: none;    
-}
-.home {
-    background-image: url('../svg/icon-home.svg');
-    background-position: 12px;
-    background-size: 10px;
-    background-repeat: no-repeat;
-    background-color: rgba(114, 239, 219, 1);
-    border: 1px;
-    border-radius: 20px;
-    width: 70px;
-    color: black;    
-    margin-right: 20px;
-}
+ 
 
 /*--------FORMULARIO DE LOGIN--------*/
 
@@ -78,7 +29,6 @@ body, h1, p {font-family: 'Rubik', Regular;}
 .formulario{
     flex-shrink: 0;
     width: 100%;
-    font-family: rubik-bold;
     display: flex;
     padding:20px;
     flex-direction: column;
@@ -139,9 +89,6 @@ body, h1, p {font-family: 'Rubik', Regular;}
 
 /*---RESPONSIVIDADE--*/
 @media (max-width: 860px) and (orientation: landscape) {
-    .menu {
-        height: 60px;
-    }
     .imagem-fundo {
         width: 50vw;
         height: 70vh;

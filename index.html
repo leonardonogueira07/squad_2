@@ -10,41 +10,35 @@
     <link rel="stylesheet" type="text/css" href="css/imagensMobile.css">    
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,700;1,500&display=swap" rel="stylesheet">
 </head>
-
-<!--Corpo da página, com estilo provisório-->
-
 <body style="background-color: #0A1744; color: #FCFCFC;">    
     <main>
-        <!--=====MENU (Leonardo)====-->    
+        <!--==========MENU=========-->    
     <header class="menu">
-        <a href="./index.html" class="logo">
-            <img class="sobre-menu__logo" src="svg/logo.svg" alt="HashtagFinder">
+        <a href="./index.html" target="_parent">
+            <img class="logo" src="svg/logo.svg" alt="HashtagFinder">
         </a>
         <nav>
             <ul class="topicos">  
-                <li><a class="sobre" href="./sobre.html"><strong>SOBRE</strong></a></li>
-                <li><a class="login" href="./meu-login.html"><strong>LOGIN</strong></a></li>                  
+                <li><a class="sobre" href="./sobre.html"><strong>sobre</strong></a></li>
+                <li><a class="login" href="./meu-login.html"><strong>login</strong></a></li>                  
             </ul>
         </nav>
     </header>
-    <!--HERO BANNER COM CAMPO DE BUSCA (Leonardo)-->
+    <!--==========HERO BANNER / BUSCA==========-->
     <section class="hero-image">
         <section class="hero-text">
             <h1>Econtre hashtags<br>de maneira fácil.</h1>
             <p>Digite o que deseja no campo de buscas e <br>confira os resultados do Twitter abaixo</p>
         </section>
         <section class="hero-busca">
-            <input type="text" id="txt-busca" placeholder="Buscar...">
-            <!--MSG DE ERRO-->
+            <input type="text" id="txt-busca" class="input" placeholder="Buscar...">
+            <!--CAMPO PARA JS - MSG DE ERRO-->
             <p id="message"></p>
         </section>
     </section>   
-        <!--=====MENU (Leonardo)====-->  
-        <!-- Parte Elias e Geice-->
-        
-        <div class="containerGrupo">
 
-        <!-- aparecer no desktop -->
+        <!--=====CONTAINER TWEETS / IMAGENS====-->          
+        <div class="containerGrupo">
         <h3>
             <div class="desktop ">Exibindo os 10 resultados mais recentes para #natureza</div>
             <div class="semResultado">Não encontramos resultados para #palavra</div>
@@ -366,7 +360,7 @@
             </div>
         </div>
         </div>
-        <!---RODAPE (Leonardo)-->
+        <!--==========RODAPE==========-->
         <footer id="rodape">
             <div class="txtRodape">
                 <p>@Cocreare 2020. Todos os direitos reservados</p>
@@ -374,5 +368,4 @@
         </footer>
     </main>
 </body>
-
 </html>

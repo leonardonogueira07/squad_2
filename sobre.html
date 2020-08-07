@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!--Início e linguagem do documento-->
 <html lang="pt-br">
     <!--Cabeçalho-->
     <head>
@@ -24,52 +23,19 @@
 
     <!--Corpo da página-->
     <body>
+
+        <!-- Menu - versão colaborativa -->
         <header class="menu">
-            <a href="./index.html" class="logo">hashtag<strong>finder</strong></a>
+            <a href="./index.html" target="_parent">
+                <img class="logo" src="svg/logo.svg" alt="HashtagFinder">
+            </a>
             <nav>
                 <ul class="topicos">  
-                    <li><a class="sobre" href="./sobre.html"><strong>SOBRE</strong></a></li>
-                    <li><a class="login" href="./meu-login.html"><strong>LOGIN</strong></a></li>                  
+                    <li><a class="home" href="./index.html"><strong>home</strong></a></li>
+                    <li><a class="login" href="./meu-login.html"><strong>login</strong></a></li>                  
                 </ul>
             </nav>
         </header>
-
-        
-        <!--Topo-->
-        
-            <!--Logo e link para a página principal-->
-            <a href="./index.html" target="_parent">
-                <img 
-                    class="sobre-menu__logo"
-                    src="svg/logo.svg"
-                    alt="HashtagFinder"
-                >
-            </a>
-            <!--Navegação-->
-            <nav class="sobre-menu__navegaçao">
-                <!--Atalho para a página principal-->
-                <a href="index.html">
-                    <button class="sobre-menu__link sobre-menu__link_claro">
-                        <img
-                            class="sobre-menu__icone"
-                            src="svg/icon-home.svg"
-                        >
-                        HOME
-                    </button>
-                </a>
-                <!--Atalho para a página de login-->
-                <a href="meu-login.html">
-                    <button class="sobre-menu__link sobre-menu__link_escuro">
-                        <img
-                            class="sobre-menu__icone"
-                            src="svg/icon-user-alt.svg"
-                        >
-                        LOGIN
-                    </button>
-                </a>
-            </nav>
-        </header>
-
 
         <!--Bloco "projeto"-->
         <div class="sobre-projeto">
@@ -437,11 +403,12 @@
 
         </section>
          
-        <!---RODAPE (Leonardo)-->
+        <!---RODAPE versão colaborativa -->
         <footer id="rodape">
             <div class="txtRodape">
                 <p>@Cocreare 2020. Todos os direitos reservados</p>
             </div>
-        </footer>        
+        </footer>
+
     </body>
 </html>
