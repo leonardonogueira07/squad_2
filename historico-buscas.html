@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>HashtagFinder | Histórico de Buscas</title>
+     <!--Favicon-->
+        <link rel="icon" href="./svg/favicon.ico" type="image/x-icon">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/buscas.css" type="text/css">
+      
+  </head>
+  <body style="background-color: #0A1744; color: #FCFCFC;">
+    <header>
+      <iframe 
+          src="menu-buscas.html" name="topoBusca" scrolling="no" style="border: 0;"
+          frameborder="0"
+      >
+      </iframe>
+    </header>
+
+    <!--
+    Mostrador de itens mais procurados       
+    -->
+    
+    <h1>Buscas realizadas</h1>
+
+    <table>
+      <thead>
+        <tr id="cabeca"> 
+          <th class="primeiro">
+            <div class ="coluna">
+            Hashtag
+            </div>
+          </th>
+          <th class="verde">Data</th>
+          <th class="verde" id="topo-direita">hora</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!--Row oculta para caso não existam buscas-->
+        <tr id="oculto">
+          <td id="vazio" colspan="1">
+            <div>
+              Ops, ainda não existem buscas realizadas
+            </div>
+          </td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div class ="coluna">
+              Hashtag
+              </div>
+          </td>   
+          <td class="verde">25/02</td>
+          <td class="verde">09:30</td>
+        </tr>
+        <tr>
+          <td>
+            <div class ="coluna">
+              Hashtag
+            </div>
+          </td> 
+          <td class="verde">25/02</td>
+          <td class="verde">09:30</td>
+        </tr>
+        <tr>
+          <td>
+            <div class ="coluna">
+              Hashtag
+            </div>
+          </td>
+          <td class="verde">25/02</td>
+          <td class="verde">09:30</td>
+        </tr>
+        <tr>
+          <td>
+            <div class ="coluna">
+              Hashtag
+            </div>
+          </td>
+          <td class="verde">25/02</td>
+          <td class="verde">09:30</td>
+        </tr>
+        <tr>
+          <td>
+            <div class ="coluna">
+              Hashtag
+            </div>
+          </td>
+          <td class="verde">25/02</td>
+          <td class="verde">09:30</td>
+        </tr>
+        <tr>
+          <td>
+            <div class ="coluna">
+              Hashtag
+            </div>
+          </td>
+          <td class="verde">25/02</td>
+          <td class="verde">09:30</td>
+        </tr>
+        <tr id="final">
+          <td id="inferior-esquerda">
+            <div class ="coluna">
+              Hashtag
+            </div>
+          </td>
+          <td class="verde">25/02</td>
+          <td class="verde" id="inferior-direita">09:30</td>
+        </tr>
+      </tbody>  
+    </table>
+    <!--Código de rodapé comentado, pois não consta rodapé no layout proposto-->
+    <!--
+    <footer id="rodape">
+      <div class="txtRodape">
+          <p>@Cocreare 2020. Todos os direitos reservados</p>
+      </div>
+    </footer>
+    -->  
+  </body>
+
+</html>
