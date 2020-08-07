@@ -1,0 +1,199 @@
+*{ margin: 0; padding: 0;}  
+body, h1, p {font-family: 'Rubik', Regular;}
+
+/*--------LOGOTIPO--------*/
+.logo {
+    display: flex;
+    text-decoration: none; 
+    color: white;
+    font-size: 22px;
+    text-align: left;
+    margin-left: 20px;
+    opacity: 0.85;
+}
+/*--------MENU--------*/
+.menu {
+    background-color: #0A1744;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 90px;
+    position: fixed;
+    top: 0;
+    width: 100%;   
+    z-index: 1;
+}   
+.topicos {
+    display: flex;
+    list-style-type: none; 
+    margin-right: 35px;
+}
+.topicos li {   
+    display: flex;
+    padding: 5px; 
+}
+.topicos li a {
+    padding: 8px;
+    text-align: right;
+    font-size: 15px;    
+    letter-spacing: 2.55px;
+    text-decoration: none;   
+}
+.sobre {
+    background-image: url('../svg/icon-info-circle.svg');
+    background-position: 12px;
+    background-size: 10px;
+    background-repeat: no-repeat;
+    background-color: rgba(114, 239, 219, 1);
+    border: 1px;
+    border-radius: 25px;
+    width: 100px;
+    color: black;    
+}
+.login {
+    background-image: url('../svg/icon-user-alt.svg');
+    background-position: 12px;
+    background-size: 10px;
+    background-repeat: no-repeat;
+    background-color: rgba(30, 62, 123, 1);
+    border: 1px;
+    border-radius: 25px;
+    width: 100px;
+    color: white;   
+}
+
+/*--------BANNER--------*/
+.hero-image {
+    display: flex;
+    flex-direction: column;
+    background-image: url("../imagens/hero-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 50px; 
+}
+.hero-text{
+    color: white;
+    padding-top: 150px;
+    padding-left: 90px;
+}
+.hero-text h1 {
+    font-size: 62px;
+}
+.hero-text p {
+    font-size: 21px;
+    padding-top: 20px;    
+}
+/*--------BUSCA--------*/
+input{
+    background-image: url("../svg/icon-search.svg");
+    background-repeat: no-repeat;
+    background-color: rgba(30, 62, 123, 1);
+    background-position: 30px 16px;
+    background-size: 17px;
+    border-radius: 72px;
+    width: 400px;
+    height: 50px;
+    padding-left: 60px;  
+    padding-top: 5px;
+    border-style: none; 
+}
+.hero-busca {
+    margin-top:40px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}  
+::-webkit-input-placeholder{
+    color: #8D9DA2;
+    font-size: 22px;
+    text-align: left;
+}
+/*--------RODAPÉ--------*/
+#rodape {
+    background-color: rgba(30, 62, 123, 1);
+    height: 100%; 
+    width: 100%;
+}
+.txtRodape {
+    font-size: 17px;
+    text-align: center;
+    padding: 50px;     
+    color: white;
+}
+
+/*RESPONSIVIDADE*/  
+@media (max-width: 960px) {
+    .menu {
+        height: 55px;
+    }
+    .sobre, .login {
+        background-position: 11px 14px;
+        height: 35px;
+    }
+    .hero-text {
+        padding-top: 80px;
+    }
+    .hero-text h1 {
+        font-size: 30px;
+    }
+    .hero-text p {
+        font-size: 15px;
+        padding-top: 10px;    
+    }
+    input {
+        height: 52px;
+    }
+}
+@media (max-width: 550px) {
+    .logo {
+        font-size: 15px;
+        margin-left: 5px;
+    }
+    .topicos {
+        margin-right: 20px;
+    }
+    .topicos li a {
+        font-size: 11px;
+        padding-top: 8px;
+    }
+    .sobre, .login {
+        background-position: 7px 9px;
+        height: 27px;
+        width: 80px;
+    }   
+    .hero-image {
+        display: flex;
+        flex-direction: column;
+        background-image: url("../imagens/mobile-hero-bg.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 70vh;
+    }
+    .hero-text h1 {
+        font-size: 35px;
+    }
+    .hero-text p {
+        font-size: 14px;
+        padding-top: 20px;    
+    }
+    .hero-text{
+        padding-top: 105px;
+        padding-left: 30px;
+    }
+    input{
+        background-position: 20px 11px;
+        background-size: 10px;
+        height: 30px;
+        width: 260px;
+        padding-top: 3px;
+        padding-left: 40px;
+    }    
+    ::-webkit-input-placeholder{
+        font-size: 15px;
+    }
+    .txtRodape {
+        font-size: 10px;
+    }
+}
