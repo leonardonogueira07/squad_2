@@ -35,30 +35,30 @@ body, h1, p {font-family: 'Rubik', Regular;}
 .topicos li a {
     padding: 8px;
     text-align: right;
-    font-size: 15px;    
+    font-size: 13px;    
     letter-spacing: 2.55px;
     text-decoration: none;   
 }
 .sobre {
     background-image: url('../svg/icon-info-circle.svg');
-    background-position: 12px;
+    background-position: 15px;
     background-size: 10px;
     background-repeat: no-repeat;
     background-color: rgba(114, 239, 219, 1);
     border: 1px;
     border-radius: 25px;
-    width: 100px;
+    width: 98px;
     color: black;    
 }
 .login {
     background-image: url('../svg/icon-user-alt.svg');
-    background-position: 12px;
+    background-position: 15px;
     background-size: 10px;
     background-repeat: no-repeat;
     background-color: rgba(30, 62, 123, 1);
     border: 1px;
     border-radius: 25px;
-    width: 100px;
+    width: 98px;
     color: white;   
 }
 

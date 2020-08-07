@@ -1,1 +1,462 @@
+/* Corpo da página - Fundo e características gerais */
+body {
 
+    /* Remoção da margem padrão */
+    margin: 0;
+
+    /* Fundos: */
+        /* Gradiente (meio) */
+    background: linear-gradient(180deg, #0A174400 0%, #0A1744 100%) no-repeat,
+        /* Imagem (topo, por baixo do gradiente) */
+        url(../imagens/about-hero-bg.jpg) no-repeat,
+        /* Cor (página inteira) */
+        #0A1744;
+    /* Tamanho e posição do gradiente e imagem */
+    background-size:  100vw 42vmax, auto 100vmax;
+    background-position:  0% 58.5vmax, 0% 0%;
+
+    /* Padrão de texto (fonte e cor) */
+    color: #FCFCFC;
+    font-family: 'Rubik', Arial, sans-serif;
+}
+/* Ajuste de responsividade */
+@media only screen and (min-width: 1200px) {
+    body {
+        /* Fundos: */
+        background-size:  100vw 36vw, contain;
+        background-position:  0% 18vw, 0% -2vw;
+    }
+}
+
+
+/* ----------------------- BLOCO SOBRE-MENU ----------------------- */
+
+/* Topo da página */
+.sobre-menu {
+
+    /* Fixação ao topo da página */
+    position: fixed;
+    top: 0;
+
+    /* Tamanho */
+    width: 94vw;
+    height: 6vw;
+    min-height: 82px;
+
+    /* Cor, sombra e efeito */
+    background-color: #0a1744ad;
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    box-shadow: 0px 3px 29px #5538EE1F;
+
+    /* Disposição dos elementos do bloco */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3.8vw 0;
+}
+/* Ajuste de responsividade */
+@media only screen and (min-width: 1200px) {
+    .sobre-menu {
+        padding: 0 3vw 0;
+    }
+}
+/* Logo */
+.sobre-menu__logo {
+
+    /* Tamanho */
+    height: 2.5vw;
+    min-height: 23px;
+}
+
+
+/* Conjunto de botões de navegação */
+.sobre-menu__navegaçao {
+
+    /* Disposição dos elementos */
+    display: flex;
+    justify-content: space-between;
+    margin-right: .1vw;
+
+    /* Tamanho (relevante para o espaçamento dos botões) */
+    width: 19vw;
+    min-width: 184px;
+}
+/* Ajuste de responsividade */
+@media only screen and (min-width: 1200px) {
+    .sobre-menu__navegaçao {
+        min-width: 225px;
+    }
+}
+
+
+/* Botão */
+.sobre-menu__link {
+
+    /* Tamanho */
+    width: 8.5vw;
+    min-width: 86px;
+    height: 2.5vw;
+    min-height: 30px;
+
+    /* Borda */
+    border: none;
+    /* Valor absoluto muito alto para arredondar 50% da altura */
+    border-radius: 9999px;
+
+    /* Texto */
+    font-family: 'Rubik', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: .15em;
+
+    /* Cursor */
+    cursor: pointer;
+
+    /* Transição de cor (cores especificadas por tema) */
+    transition: background-color ease-out .4s;
+}
+/* Ajuste de responsividade */
+@media only screen and (min-width: 1200px) {
+    .sobre-menu__link {
+        /* Texto */
+        font-size: .85vw;
+        /* Tamanho */
+        min-width: 106px;
+    }
+}
+
+
+/* Ícone de botâo */
+.sobre-menu__icone {
+
+    /* Ajuste de posição */
+    position: relative;
+    top: 1px;
+
+    /* Tamanho */
+    height: .75vw;
+    min-height: 10px;
+
+    /* Distância do texto */
+    margin-right: .5em;
+}
+
+
+/* Tema claro para botões */
+.sobre-menu__link_claro {
+    background-color: #72EFDB;
+    color: #0B1741;
+}
+.sobre-menu__link_claro:hover {
+    background-color: #b3fff4;
+}
+/* Tema escuro para botões */
+.sobre-menu__link_escuro {
+    background-color: #1E3E7B;
+    color: #FFFFFF;
+}
+.sobre-menu__link_escuro:hover {
+    background-color: #32589c;
+}
+
+
+/* ----------------------- BLOCO SOBRE-PROJETO ----------------------- */
+
+/*  Bloco sobre-projeto */
+.sobre-projeto{
+    /* Posicionamento*/
+    margin: 13vw 7.6vw 10vw 7.2vw;
+    display: flex; 
+    /* Organização das childrens */
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+    /* Ajuste de responsividade */
+@media only screen and (max-width: 1200px) {
+    .sobre-projeto {
+        /* Fundos: */
+        margin: 127px 26px 50px;
+        justify-content: space-evenly;
+    }
+}
+/* Título sobre-projeto */
+sobre-projeto__titulo {
+
+    /* Texto */
+    font-weight: bolder;
+    font-size: 4.2vw;
+    /* Altura da linha */
+    line-height: 4.6vw;   
+
+    /* Posicionamento */
+    margin: 0 0 2vw; 
+
+    /* Cor */
+    color: #FFFFFF;    
+}
+/* Ajuste de responsividade */
+@media only screen and (max-width: 1200px) {
+    .sobre-projeto__titulo {
+        /* Texto */
+    font-size: 33px;
+    /* Altura da linha */
+    line-height: 33px;   
+ /* Posicionamento */
+    margin: 54px 0 31px;         
+    }
+}
+
+/* Descrição do projeto */
+.sobre-projeto__texto {
+
+/* Tamanho */
+    width: 39.2vw;      
+    /* Texto */
+    font-size: 1vw;  
+    /* Altura da linha */
+    line-height: 1.9vw;
+}
+/* Ajuste de Responsividade */
+@media only screen and (max-width: 1200px) {
+    .sobre-projeto__texto {
+        /* Tamanho */
+    width: 100%; 
+        /* Texto */
+    font-size: 15px;
+    /* Altura da linha */
+    line-height: 26px;               
+    }
+}
+/* Foto-hero */
+.sobre-projeto__imagem {
+
+    /* Posicionamento relação à largura da tela */
+    width: 33vw;    
+    margin-top: 2.5vw;
+    }
+    /* Ajuste de Responsividade */
+@media only screen and (max-width: 1200px) {
+    .sobre-projeto__imagem {
+    /* Posicionamento relação à largura da tela */
+    width: 100%;    
+    margin-top: 57px;
+    max-width: 500px;
+    }
+}
+
+/* ----------------------- BLOCO EQUIPE ----------------------- */
+
+/* Bloco da equipe */
+.sobre-equipe {
+
+    /* Margens */
+    margin: 0 3.5vw 64px;
+}
+/* Ajuste de responsividade */
+@media only screen and (min-width: 1200px) {
+    .sobre-equipe {
+        margin: 0 9vw 7vw;
+    }
+}
+
+
+/* Título */
+.sobre-equipe__titulo {
+
+    /* Fonte */
+    font-size: 27px;
+
+    /* Tamanho */
+    margin: 0 4vw 45px;
+    line-height: 3vw;
+}
+/* Ajuste de responsividade */
+@media only screen and (min-width: 1200px) {
+    .sobre-equipe__titulo {
+        /* Fonte */
+        font-size: 2.8vw;
+        /* Margem */
+        margin: 0 2vw 5.5vw;
+    }
+}
+
+
+/* Lista de membros */
+.sobre-equipe__membros {
+
+    /* Disposição */
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+/* Disposição - Ajuste de responsividade */
+@media only screen and (min-width: 1200px) {
+    .sobre-equipe__membros {
+        justify-content: center;
+    }
+}
+
+
+/* ----------------------- BLOCO SOBRE-MEMBRO ----------------------- */
+
+/* Bloco dos perfis */
+.sobre-membro {
+
+    /* Cor e forma */
+    background-color: #0B1A49;
+    border: solid 1px #FFFFFF24;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px #5538EE14;
+
+    /* Tamanho */
+    width: 400px;
+    max-width: 100%;
+    margin: 0 2% 46px;
+
+    /* Texto */
+    text-align: center;
+}
+/* Ajuste de responsividade */
+@media only screen and (min-width: 1200px) {
+    .sobre-membro {
+        width: 18.2vw;
+        margin: 0 1vw 2.5vw;
+    }
+}
+
+
+/* Foto de perfil */
+.sobre-membro__imagem {
+
+    /* Tamanho e forma */
+    width: 204px;
+    max-width: 43vw;
+    height: 204px;
+    max-height: 43vw;
+    object-fit: cover;
+    border-radius: 50%;
+
+    /* Margem */
+    margin: 36px 4.5vw 22px;
+}
+/* Ajuste de responsividade */
+@media only screen and (min-width: 1200px) {
+    .sobre-membro__imagem {
+        width: 9.25vw;
+        height: 9.25vw;
+        margin: 1.8vw 4.5vw 1.1vw;
+    }
+}
+
+
+/* Nome */
+.sobre-membro__nome {
+
+    /* Fonte */
+    color: #72EFDB;
+    font-size: 28px;
+
+    /* Margem */
+    margin: 0 .75vw 22px;
+}
+/* Ajuste de responsividade */
+@media only screen and (min-width: 1200px) {
+    .sobre-membro__nome {
+        font-size: 1.4vw;
+        margin: 0 .75vw 1.1vw;
+    }
+}
+
+
+/* Descrição */
+.sobre-membro__texto {
+
+    /* Fonte */
+    font-size: 19px;
+    font-weight: 300;
+    color: #D9D9D9;
+
+    /* Espaçamento */
+    line-height: 25px;
+    margin: 0 36px 24px;
+}
+/* Ajuste de responsividade */
+@media only screen and (min-width: 1200px) {
+    .sobre-membro__texto {
+        font-size: 1vw;
+        line-height: 1.3vw;
+        margin: 0 1vw 2vw;
+    }
+}
+
+
+/* Lista de contatos */
+.sobre-membro__contatos {
+
+    /* Disposição */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /* Tamanho */
+    width: 34%;
+    margin: 0 33% 38px;
+}
+/* Ajuste de responsividade */
+@media only screen and (min-width: 1200px) {
+    .sobre-membro__contatos {
+        width: 7vw;
+        margin: 0 5.6vw 1.8vw;
+    }
+}
+
+
+/* Ícones de contato */
+.sobre-membro__link {
+
+    /* Tamanho */
+    height: 24px;
+}
+/* Ajuste de responsividade */
+@media only screen and (min-width: 1200px) {
+    .sobre-membro__link {
+        height: 1.25vw;
+    }
+}
+
+
+/* ----------------------- BLOCO RODAPÉ ----------------------- */
+
+/* Bloco do rodapé */
+.sobre-rodape {
+
+    /* Cor e tamanho */
+    background-color: #1e3f7bbd;
+    padding: 42px 0;
+}
+/* Ajuste de responsividade */
+@media only screen and (min-width: 1200px) {
+    .sobre-rodape {
+        padding: 4.5vw 0;
+    }
+}
+
+
+/* Texto */
+.sobre-rodape__texto {
+
+    /* Fonte */
+    font-size: 12px;
+    font-weight: 300;
+
+    /* Espaçamento */
+    text-align: center;
+    margin: 0;
+}
+/* Ajuste de responsividade */
+@media only screen and (min-width: 1200px) {
+    .sobre-rodape__texto {
+        font-size: 1.3vw;
+    }
+}

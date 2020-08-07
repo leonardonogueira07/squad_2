@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<!--Início e linguagem do documento-->
+<html lang="pt-br">
+    <!--Cabeçalho-->
+    <head>
+        <!--Metadados essenciais-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Título da página-->
+        <title>HashtagFinder | Sobre</title>
+        <!--Metadados de busca-->
+        <meta name="description" content="Hashtagfinder. Encontre Hashtags de maneira fácil. Hashtags e tópicos de tendências do Twitter mapeados. 
+        Visualize tópicos de tendências global, nacional e em sua cidade. Veja as principais notícias, vídeos e imagens 
+        para tendências que ocorrem em qualquer lugar do mundo. dez últimas imagens e mensagens postadas no Twitter">
+        <meta name="keywords" content="">
+        <!--Favicon-->
+        <link rel="icon" href="./svg/favicon.ico" type="image/x-icon">
+        <!--Fonte "Rubik"-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap">
+        <!--Stylesheet externo-->
+        <link rel="stylesheet" href="css/sobre.css">
+            </head>
+
+    <!--Corpo da página-->
+    <body>
+
+        
+        <!--Topo-->
+        <header class="sobre-menu">
+            <!--Logo e link para a página principal-->
+            <a href="./index.html" target="_parent">
+                <img
+                    class="sobre-menu__logo"
+                    src="svg/logo.svg"
+                    alt="HashtagFinder"
+                >
+            </a>
+            <!--Navegação-->
+            <nav class="sobre-menu__navegaçao">
+                <!--Atalho para a página principal-->
+                <a href="index.html">
+                    <button class="sobre-menu__link sobre-menu__link_claro">
+                        <img
+                            class="sobre-menu__icone"
+                            src="svg/icon-home.svg"
+                        >
+                        HOME
+                    </button>
+                </a>
+                <!--Atalho para a página de login-->
+                <a href="meu-login.html">
+                    <button class="sobre-menu__link sobre-menu__link_escuro">
+                        <img
+                            class="sobre-menu__icone"
+                            src="svg/icon-user-alt.svg"
+                        >
+                        LOGIN
+                    </button>
+                </a>
+            </nav>
+        </header>
+
+
+        <!--Bloco "projeto"-->
+        <div class="sobre-projeto">
+            <!-- Sobre o projeto-->
+            <main>
+                <!--Título-->
+                <h1 class="sobre-projeto__titulo">Sobre o Projeto</h1>
+
+                <!---Descrição-->
+                <p class="sobre-projeto__texto">
+                    O HashtagFinder é um site responsivo para visualização de mensagens 
+                    e imagens do Twitter, retornando rápida e organizadamente os dez resultados mais recentes.</br>
+                    É útil para analistas, produtores de conteúdo e outros tipos de profissionais 
+                    que podem conferir a relevância imediata de um conteúdo específico através de
+                    palavras e expressões relacionadas.</br>
+                    Foi desenvolvida em equipe durante a capacitação em Desenvolvimento Front-End 
+                    da Cocreare Academy de maneira incremental durante os módulos HTML, CSS e Javascript.
+                    Em seu escopo possui duas páginas acessíveis para qualquer usuário. A primeira, "Home", 
+                    consiste um campo para busca da hashtag digitada e uma área para visualização das últimas 
+                    10 mensagens e imagens. A segunda, "Sobre", 
+                    contém essa área com uma breve explicação do projeto e outra com os profissionais 
+                    envolvidos no projeto. Há também uma página restrita para acompanhar as buscas realizadas.
+
+                </p>
+            </main>  
+
+             <!--Foto ilustração Hero-->
+            <img
+                class="sobre-projeto__imagem"
+                src="svg/about-ilustration.svg"
+                alt="Ilustração representando o projeto"
+            >
+
+        </div> 
+            
+
+        <!--Seção "Quem somos"-->
+        <section class="sobre-equipe">
+            <!--Título "Quem Somos"-->
+            <h2 class="sobre-equipe__titulo">Quem somos</h2>
+
+            <!--Flex com os membros-->
+            <div class="sobre-equipe__membros">
+
+                <!--Perfil 1-->
+                <div class="sobre-membro">
+                    <!--Foto-->
+                    <img
+                        class="sobre-membro__imagem"
+                        src="imagens/fotos-perfis/cesar.jpg"
+                        alt="Foto de perfil"
+                    >
+                    <!--Nome-->
+                    <h3 class="sobre-membro__nome">César Jorge de Souza Dias Pereira</h3>
+                    <!--Descrição-->
+                    <p class="sobre-membro__texto">
+                        Trabalhei junto ao Júlio César na parte de buscas realizadas em toda a sua função e visual
+                    </p>
+                    <!--Links e contato-->
+                    <div class="sobre-membro__contatos">
+                        <a href="http://github.com/cesarsouzad" target="_blank">
+                            <img
+                                class="sobre-membro__link"
+                                src="svg/icon-github.svg"
+                                alt="Github"
+                            >
+                        </a>
+                        <a href="mailto:cesarsouzad@gmail.com">
+                            <img
+                                class="sobre-membro__link"
+                                src="svg/icon-envelope.svg"
+                                alt="Email"
+                            >
+                        </a>
+                        <a href="https://www.linkedin.com/in/cesar-jorge-souza-dias-pereira-0993036b/" target="_blank">
+                            <img
+                                class="sobre-membro__link"
+                                src="svg/icon-awesome-linkedin.svg"
+                                alt="LinkedIn"
+                            >
+                        </a>
+                    </div>
+                </div>
+
+                <!--Perfil 2-->
+                <div class="sobre-membro">
+                    <!--Foto-->
+                    <img
+                        class="sobre-membro__imagem"
+                        src="imagens/fotos-perfis/elias.jpg"
+                        alt="Foto de perfil"
+                    >
+                    <!--Nome-->
+                    <h3 class="sobre-membro__nome">Elias Matheus Melo de Oliveira</h3>
+                    <!--Descrição-->
+                    <p class="sobre-membro__texto">
+                        Fui responsável pela criação e estilização da sessão de exibição dos resultados do site
+                    </p>
+                    <!--Links e contato-->
+                    <div class="sobre-membro__contatos">
+                        <a href="https://github.com/eMatheus23" target="_blank">
+                            <img
+                                class="sobre-membro__link"
+                                src="svg/icon-github.svg"
+                                alt="Github"
+                            >
+                        </a>
+                        <a href="mailto:eliasmatheus@hotmail.com">
+                            <img
+                                class="sobre-membro__link"
+                                src="svg/icon-envelope.svg"
+                                alt="Email"
+                            >
+                        </a>
+                        <a href="https://www.linkedin.com/in/ematheus23/" target="_blank">
+                            <img
+                                class="sobre-membro__link"
+                                src="svg/icon-awesome-linkedin.svg"
+                                alt="LinkedIn"
+                            >
+                        </a>
+                    </div>
+                </div>
+
+                <!--Perfil 3-->
+                <div class="sobre-membro">
+                    <!--Foto-->
+                    <img
+                        class="sobre-membro__imagem"
+                        src="imagens/fotos-perfis/geice.jpg"
+                        alt="Foto de perfil"
+                    >
+                    <!--Nome-->
+                    <h3 class="sobre-membro__nome">Geice Gomes</h3>
+                    <!--Descrição-->
+                    <p class="sobre-membro__texto">
+                        Fui responsável pela criação e estilização da sessão de exibição dos resultados do site
+                    </p>
+                    <!--Links e contato-->
+                    <div class="sobre-membro__contatos">
+                        <a href="https://github.com/Sogmesmo" target="_blank">
+                            <img
+                                class="sobre-membro__link"
+                                src="svg/icon-github.svg"
+                                alt="Github"
+                            >
+                        </a>
+                        <a href="mailto:sogmesmo@gmail.com">
+                            <img
+                                class="sobre-membro__link"
+                                src="svg/icon-envelope.svg"
+                                alt="Email"
+                            >
+                        </a>
+                        <a href="https://www.linkedin.com/in/geicegomes/" target="_blank">
+                            <img
+                                class="sobre-membro__link"
+                                src="svg/icon-awesome-linkedin.svg"
+                                alt="LinkedIn"
+                            >
+                        </a>
+                    </div>
+                </div>
+
+                <!--Perfil 4-->
+                <div class="sobre-membro">
+                    <!--Foto-->
+                    <img
+                        class="sobre-membro__imagem"
+                        src="imagens/fotos-perfis/jordana.jpg"
+                        alt="Foto de perfil"
+                    >
+                    <!--Nome-->
+                    <h3 class="sobre-membro__nome">Jordana Prates Amorim</h3>
+                    <!--Descrição-->
+                    <p class="sobre-membro__texto">
+                        Eu e Miguel desenvolvemos a página sobre, essa que você está navegando
+                    </p>
+                    <!--Links e contato-->
+                    <div class="sobre-membro__contatos">
+                        <a href="https://github.com/Jords-amorim" target="_blank">
+                            <img
+                                class="sobre-membro__link"
+                                src="svg/icon-github.svg"
+                                alt="Github"
+                            >
+                        </a>
+                        <a href="mailto:Jordana_amorim@hotmail.com">
+                            <img
+                                class="sobre-membro__link"
+                                src="svg/icon-envelope.svg"
+                                alt="Email"
+                            >
+                        </a>
+                        <a href="https://www.linkedin.com/in/jordana-prates-amorim-aa84811a9/" target="_blank">
+                            <img
+                                class="sobre-membro__link"
+                                src="svg/icon-awesome-linkedin.svg"
+                                alt="LinkedIn"
+                            >
+                        </a>
+                    </div>
+                </div>
+
+                <!--Perfil 5-->
+                <div class="sobre-membro">
+                    <!--Foto-->
+                    <img
+                        class="sobre-membro__imagem"
+                        src="imagens/fotos-perfis/julio.jpg"
+                        alt="Foto de perfil"
+                    >
+                    <!--Nome-->
+                    <h3 class="sobre-membro__nome">Júlio César Tomáz de Araújo Oliveira</h3>
+                    <!--Descrição-->
+                    <p class="sobre-membro__texto">
+                        Trabalhei, juntamente com o César. na parte de histórico de buscas realizadas do site
+                    </p>
+                    <!--Links e contato-->
+                    <div class="sobre-membro__contatos">
+                        <a href="https://github.com/juli0o79" target="_blank">
+                            <img
+                                class="sobre-membro__link"
+                                src="svg/icon-github.svg"
+                                alt="Github"
+                            >
+                        </a>
+                        <a href="mailto:juli0o79@hotmail.com">
+                            <img
+                                class="sobre-membro__link"
+                                src="svg/icon-envelope.svg"
+                                alt="Email"
+                            >
+                        </a>
+                        <a href="https://www.linkedin.com/in/j%C3%BAlio-c%C3%A9sar-tom%C3%A1z-ara%C3%BAjo-4525a1109/" target="_blank">
+                            <img
+                                class="sobre-membro__link"
+                                src="svg/icon-awesome-linkedin.svg"
+                                alt="LinkedIn"
+                            >
+                        </a>
+                    </div>
+                </div>
+
+                <!--Perfil 6-->
+                <div class="sobre-membro">
+                    <!--Foto-->
+                    <img
+                        class="sobre-membro__imagem"
+                        src="imagens/fotos-perfis/leonardo.png"
+                        alt="Foto de perfil"
+                    >
+                    <!--Nome-->
+                    <h3 class="sobre-membro__nome">Leonardo Junio Rosa Nogueira</h3>
+                    <!--Descrição-->
+                    <p class="sobre-membro__texto">
+                        Trabalhei no desenvolvimento do menu incluido banner, area busca e rodapé.
+                    </p>
+                    <!--Links e contato-->
+                    <div class="sobre-membro__contatos">
+                        <a href="https://github.com/lenog07" target="_blank">
+                            <img
+                                class="sobre-membro__link"
+                                src="svg/icon-github.svg"
+                                alt="Github"
+                            >
+                        </a>
+                        <a href="mailto:leojunio007@gmail.com">
+                            <img
+                                class="sobre-membro__link"
+                                src="svg/icon-envelope.svg"
+                                alt="Email"
+                            >
+                        </a>
+                        <a href="https://www.linkedin.com/in/leonardo-junio-r-154b871a1/" target="_blank">
+                            <img
+                                class="sobre-membro__link"
+                                src="svg/icon-awesome-linkedin.svg"
+                                alt="LinkedIn"
+                            >
+                        </a>
+                    </div>
+                </div>
+
+                <!--Perfil 7-->
+                <div class="sobre-membro">
+                    <!--Foto-->
+                    <img
+                        class="sobre-membro__imagem"
+                        src="imagens/fotos-perfis/miguel.jpg"
+                        alt="Foto de perfil"
+                    >
+                    <!--Nome-->
+                    <h3 class="sobre-membro__nome">Miguel Gesqui Malagoli</h3>
+                    <!--Descrição-->
+                    <p class="sobre-membro__texto">
+                        Desenvolvi, com a Jordana, essa página sobre o projeto que você está vendo agora
+                    </p>
+                    <!--Links e contato-->
+                    <div class="sobre-membro__contatos">
+                        <a href="https://github.com/miguel-malagoli" target="_blank">
+                            <img
+                                class="sobre-membro__link"
+                                src="svg/icon-github.svg"
+                                alt="Github"
+                            >
+                        </a>
+                        <a href="mailto:miguel.g.malagoli@gmail.com">
+                            <img
+                                class="sobre-membro__link"
+                                src="svg/icon-envelope.svg"
+                                alt="Email"
+                            >
+                        </a>
+                        <a href="https://www.linkedin.com/in/miguel-malagoli/" target="_blank">
+                            <img
+                                class="sobre-membro__link"
+                                src="svg/icon-awesome-linkedin.svg"
+                                alt="LinkedIn"
+                            >
+                        </a>
+                    </div>
+                </div>
+
+                <!--Perfil 8-->
+                <div class="sobre-membro">
+                    <!--Foto-->
+                    <img
+                        class="sobre-membro__imagem"
+                        src="imagens/fotos-perfis/yan.jpg"
+                        alt="Foto de perfil"
+                    >
+                    <!--Nome-->
+                    <h3 class="sobre-membro__nome">Yan Felipe de Ameida</h3>
+                    <!--Descrição-->
+                    <p class="sobre-membro__texto">
+                        Trabalhei na página de login, e contribuí pela responsividade da página
+                    </p>
+                    <!--Links e contato-->
+                    <div class="sobre-membro__contatos">
+                        <a href="https://github.com/Yanfelipe02" target="_blank">
+                            <img
+                                class="sobre-membro__link"
+                                src="svg/icon-github.svg"
+                                alt="Github"
+                            >
+                        </a>
+                        <a href="mailto:yan.f.almeida02@gmail.com">
+                            <img
+                                class="sobre-membro__link"
+                                src="svg/icon-envelope.svg"
+                                alt="Email"
+                            >
+                        </a>
+                        <a href="https://www.linkedin.com/in/yan-almeida-a7b27218b/" target="_blank">
+                            <img
+                                class="sobre-membro__link"
+                                src="svg/icon-awesome-linkedin.svg"
+                                alt="LinkedIn"
+                            >
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!--Rodapé-->
+        <footer class="sobre-rodape">
+            <div>
+                <p class="sobre-rodape__texto">© Cocreare 2020. Todos os direitos reservados</p>
+            </div>
+        </footer>  
+        
+    </body>
+</html>
