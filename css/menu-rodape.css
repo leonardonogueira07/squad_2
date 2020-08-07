@@ -143,9 +143,7 @@ input{
     }
 }
 @media (max-width: 550px) {
-    .logo {
-        
-    }
+    
     .topicos {
         margin-right: 20px;
     }
