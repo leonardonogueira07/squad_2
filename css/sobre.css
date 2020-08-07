@@ -44,7 +44,7 @@ body {
     min-height: 82px;
 
     /* Cor, sombra e efeito */
-    background-color: #0a1744ad;
+    background-color: #0a1744ab;
     backdrop-filter: blur(30px);
     -webkit-backdrop-filter: blur(30px);
     box-shadow: 0px 3px 29px #5538EE1F;
