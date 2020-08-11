@@ -196,6 +196,9 @@ body, h1, p {font-family: 'Rubik', Regular;}
     .hero-text{
         padding-top: 105px;
         padding-left: 30px;
+    }
+    .input {
+        width: 320px;
     }   
     .txtRodape {
         font-size: 10px;
@@ -211,6 +214,10 @@ body, h1, p {font-family: 'Rubik', Regular;}
     .hero-text p {
         font-size: 10px;
     }
-    
+    .input {
+        background-position: 30px 12px;
+        width: 250px;
+        height: 42px;
+    }
     
 } 
