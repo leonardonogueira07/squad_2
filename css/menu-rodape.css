@@ -18,12 +18,12 @@ body, h1, p {font-family: 'Rubik', Regular;}
     position: fixed;
     top: 0;
     width: 100%;   
-    z-index: 1;
+    z-index: 10;
 }   
 .topicos {
     display: flex;
-    list-style-type: none; 
-    margin-right: 35px;
+    list-style-type: none;   
+    margin-right: 10px;  
 }
 .topicos li {   
     display: flex;
@@ -57,8 +57,7 @@ body, h1, p {font-family: 'Rubik', Regular;}
     border: 1px;
     border-radius: 25px;
     width: 98px;
-    color: black;
-    right: 15px;    
+    color: black;   
 }
 .login {
     background-image: url('../svg/icon-user-alt.svg');
@@ -82,7 +81,13 @@ body, h1, p {font-family: 'Rubik', Regular;}
     width: 98px;
     color: white;   
 }
-
+/*Efeito JavaScript*/
+.scrolling-active {
+    background-color: #0a1744ad;
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    box-shadow: 0px 3px 29px #5538EE1F;
+}
 /*--------BANNER--------*/
 .hero-image {
     display: flex;
@@ -113,7 +118,7 @@ body, h1, p {font-family: 'Rubik', Regular;}
     background-position: 30px 16px;
     background-size: 17px;
     border-radius: 72px;
-    width: 400px;
+    width: 460px;
     height: 50px;
     padding-left: 60px;  
     padding-top: 5px;
@@ -159,14 +164,13 @@ body, h1, p {font-family: 'Rubik', Regular;}
         padding-top: 10px;    
     }
     input {
-        height: 52px;
+        height: 50px;
     }
 }
-@media (max-width: 550px) {   
+@media (max-width: 450px) {   
 
     .topicos li a {
-        font-size: 11px;
-        
+        font-size: 11px;        
     }
     .sobre, .login, .home {
         background-position: 7px 9px;
@@ -183,46 +187,30 @@ body, h1, p {font-family: 'Rubik', Regular;}
         height: 70vh;
     }
     .hero-text h1 {
-        font-size: 35px;
+        font-size: 32px;
     }
     .hero-text p {
-        font-size: 14px;
+        font-size: 13px;
         padding-top: 20px;    
     }
     .hero-text{
         padding-top: 105px;
         padding-left: 30px;
-    }
-    input{
-        background-position: 20px 11px;
-        background-size: 10px;
-        height: 30px;
-        width: 260px;
-        padding-top: 3px;
-        padding-left: 40px;
-    }    
-    ::-webkit-input-placeholder{
-        font-size: 15px;
-    }
+    }   
     .txtRodape {
         font-size: 10px;
     }
 }
 @media (max-width: 288px) {
     .logo {
-        width: 35vw;
+        width: 32vw;
     }
     .hero-text h1 {
-        font-size: 25px;
+        font-size: 22px;
     }
     .hero-text p {
-        font-size: 12px;
-    }
-    .topicos li a{
         font-size: 10px;
     }
-    .home, .login, .sobre {
-        width: 75px;
-        height: 26px;
-    }
+    
+    
 } 
