@@ -1,3 +1,13 @@
+/* -------------------------  Lógica
+1 – Identificar quando o usuário utiliza o scroll
+2 – Calcular a distância entre o topo da página e o scroll
+3 – Calcular a distância entre o topo da página e o elemento que deseja animar
+4 – Comparar as duas distâncias anteriores
+5 – Adicionar uma classe com css animation ou transition ao elemento animado
+        Toda a lógica será criada com JavaScript. 
+        Eu vou usar a biblioteca de funções jQuery para facilitar  o desenvolvimento. 
+---------------------------------------------------------------------------*/
+
 // Função usada para encontrar a posição vertical do tweet na página (usada mais abaixo para
 // comparar com a posição vertical do scroll do navegador)
 function boxTop(boxElemento) {
