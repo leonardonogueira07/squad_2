@@ -170,6 +170,10 @@ h3 {
     border-radius: 1.8rem;
     margin-bottom: 4.2rem;
 }
+.anim {
+    background: #7b291e7a;
+    transition: background .5s ease;
+}
 
 .containerTweets img {
     border-radius: 50%;
