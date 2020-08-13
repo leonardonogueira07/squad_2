@@ -10,7 +10,7 @@
 
 // Função usada para encontrar a posição vertical do tweet na página (usada mais abaixo para
 // comparar com a posição vertical do scroll do navegador)
-function boxTop(boxElemento) {
+function tweetBoxTop(boxElemento) {
     // getBoundingClientRect() retorna um objeto com propriedades que dão a posição e as dimensões do elemento
 	let boxOffset = boxElemento.getBoundingClientRect().top;
 	return boxOffset;
@@ -19,8 +19,9 @@ function boxTop(boxElemento) {
 // Teste - registrar no console a posição vertical dos tweets
 let tweets = document.querySelectorAll('.containerTweets');
 for (tweet of tweets) {
-    console.log(boxTop(tweet));
+    console.log(tweetBoxTop(tweet));
 }
+
 
 
 
@@ -34,6 +35,13 @@ for (tweet of tweets) {
 */
 
 
+
+
+/* teste
+document.querySelector('body').onload = function() {
+    console.log('oi');
+}
+*/
 
 /*
 
