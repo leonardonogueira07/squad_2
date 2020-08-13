@@ -83,10 +83,11 @@ body, h1, p {font-family: 'Rubik', Regular;}
 }
 /*Efeito JavaScript*/
 .scrolling-active {
-    background-color: #0a1744ad;
+    background: #0a1744ad;
     backdrop-filter: blur(30px);
     -webkit-backdrop-filter: blur(30px);
     box-shadow: 0px 3px 29px #5538EE1F;
+    opacity: 1;
 }
 /*--------BANNER--------*/
 .hero-image {
