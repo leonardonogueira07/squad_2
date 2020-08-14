@@ -1,7 +1,7 @@
 
 //Efeito Menu Js
 window.addEventListener('scroll', function(){
-    let header = document.querySelector('header');
+    let header = document.querySelector('.container');
     header.classList.toggle('scrolling-active', window.scrollY > 0);
 })
 

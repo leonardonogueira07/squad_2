@@ -1,86 +1,59 @@
 *{ margin: 0; padding: 0;}  
 body, h1, p {font-family: 'Rubik', Regular;}
 
-/*--------LOGOTIPO--------*/
-.logo {
-    height: 2.5vw;
-    min-height: 23px;    
-    opacity: 0.85; 
-    margin-left: 10px;
-}
+
 /*--------MENU--------*/
-.menu {
+.container {
     background-color: #0A1744;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 90px;
     position: fixed;
     top: 0;
-    width: 100%;   
+    width: 100%; 
     z-index: 10;
 }   
-.topicos {
-    display: flex;
-    list-style-type: none;   
-    margin-right: 10px;  
+/*--------LOGOTIPO--------*/
+.logo img{
+    height: 20px;
+    opacity: 0.72;
+    margin: 20px; 
 }
-.topicos li {   
-    display: flex;
-    padding: 5px; 
+/*--------Botões---------*/
+.menu {
+    display: flex;   
+    padding-right: 10px;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
 }
-.topicos li a {
-    padding: 8px;
-    text-align: right;
-    font-size: 13px;    
+.menu a {
+    display: flex;
+    height: 30px;
+    width: 90px;
+    margin: 7px;
+    border-radius: 20px;
+    font-size: 10pt;
+    letter-spacing: 1px;
+    font-weight: bolder;
+    text-decoration: none;
     text-transform: uppercase;
-    letter-spacing: 2.55px;
-    text-decoration: none;   
+    align-items: center;
+    justify-content: center;
 }
-.sobre {
-    background-image: url('../svg/icon-info-circle.svg');
-    background-position: 15px;
-    background-size: 10px;
-    background-repeat: no-repeat;
+.menu img {
+    width: 12px;
+    margin: 6px;
+}
+.sobre, .home {
     background-color: rgba(114, 239, 219, 1);
-    border: 1px;
-    border-radius: 25px;
-    width: 98px;
-    color: black;    
+    color: #0B1741;    
 }
-.home {
-    background-image: url('../svg/icon-home.svg');
-    background-position: 15px;
-    background-size: 10px;
-    background-repeat: no-repeat;
-    background-color: rgba(114, 239, 219, 1);
-    border: 1px;
-    border-radius: 25px;
-    width: 98px;
-    color: black;   
-}
-.login {
-    background-image: url('../svg/icon-user-alt.svg');
-    background-position: 15px;
-    background-size: 10px;
-    background-repeat: no-repeat;
+.login, .sair {
     background-color: rgba(30, 62, 123, 1);
-    border: 1px;
-    border-radius: 25px;
-    width: 98px;
-    color: white;   
+    color: #FFFFFF;   
 }
-.sair {
-    background-image: url('../svg/icon-power-off.svg');
-    background-position: 15px;
-    background-size: 10px;
-    background-repeat: no-repeat;
-    background-color: rgba(30, 62, 123, 1);
-    border: 1px;
-    border-radius: 25px;
-    width: 98px;
-    color: white;   
-}
+
 /*Efeito JavaScript*/
 .scrolling-active {
     background: #0a1744ad;
@@ -97,11 +70,16 @@ body, h1, p {font-family: 'Rubik', Regular;}
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-bottom: 50px; 
+    margin-top: 50px;
+    padding-bottom: 100px;
+}
+.hero-image::after {
+    z-index: -1;
+    position: absolute;
 }
 .hero-text{
     color: white;
-    padding-top: 150px;
+    padding-top: 90px;
     padding-left: 90px;
 }
 .hero-text h1 {
@@ -126,7 +104,7 @@ body, h1, p {font-family: 'Rubik', Regular;}
     border-style: none; 
 }
 .hero-busca {
-    margin-top:40px;
+    margin-top: 150px;
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -150,10 +128,7 @@ body, h1, p {font-family: 'Rubik', Regular;}
 }
 
 /*RESPONSIVIDADE*/  
-@media (max-width: 960px) {    
-    .menu {
-        height: 55px;
-    }
+@media (max-width: 960px) { 
     .hero-text {
         padding-top: 80px;
     }
@@ -169,23 +144,11 @@ body, h1, p {font-family: 'Rubik', Regular;}
     }
 }
 @media (max-width: 450px) {   
-
-    .topicos li a {
-        font-size: 11px;        
-    }
-    .sobre, .login, .home {
-        background-position: 7px 9px;
-        height: 27px;
-        width: 80px;
-    } 
     .hero-image {
         display: flex;
         flex-direction: column;
         background-image: url("../imagens/mobile-hero-bg.jpg");
         background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 70vh;
     }
     .hero-text h1 {
         font-size: 32px;
@@ -206,9 +169,6 @@ body, h1, p {font-family: 'Rubik', Regular;}
     }
 }
 @media (max-width: 288px) {
-    .logo {
-        width: 32vw;
-    }
     .hero-text h1 {
         font-size: 22px;
     }
