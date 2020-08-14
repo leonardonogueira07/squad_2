@@ -11,8 +11,10 @@
     <link rel="stylesheet" type="text/css" href="css/imagensMobile.css">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,700;1,500&display=swap" rel="stylesheet">
     <!-- Implementação Javascript-->
-    <script type="text/javascript" src="/js/index.js"></script>
+    <script type="text/javascript" src="../squad_2/js/index.js"></script>
     <script src="../squad_2/js/imagens.js"></script>
+
+
 </head>
 
 <body style="background-color: #0A1744; color: #FCFCFC;">
@@ -60,8 +62,8 @@
             <div id="Imagens" class="containerGaleria">
                 <div class="coluna">
                     <div class="containerImagem">
-                        <a target="_blank" href="imagens/top10/photo-01.jpg">
-                            <img src="imagens/top10/photo-01.jpg" alt="imagem do mar">
+                        <a target="_blank">
+                            <img src="imagens/top10/photo-01.jpg" alt="imagem do mar" onclick="cliqueModal(this)">
                             <div class="degrade"></div>
                             <div class="texto">
                                 <div class="textoPostadoPor">Postado por:</div>
@@ -70,8 +72,8 @@
                         </a>
                     </div>
                     <div class="containerImagem">
-                        <a target="_blank" href="">
-                            <img src="imagens/top10/photo-03.jpg" alt="foto aérea de uma floresta" />
+                        <a target="_blank">
+                            <img src="imagens/top10/photo-03.jpg" alt="foto aérea de uma floresta" onclick="cliqueModal(this)">
                             <div class="degrade"></div>
                             <div class="containerTexto">
                                 <div class="texto">
@@ -82,8 +84,8 @@
                         </a>
                     </div>
                     <div class="containerImagem">
-                        <a target="_blank" href="">
-                            <img src="imagens/top10/photo-05.jpg" alt="imagem aérea de vilas">
+                        <a target="_blank">
+                            <img src="imagens/top10/photo-05.jpg" alt="imagem aérea de vilas" onclick="cliqueModal(this)">
                             <div class="degrade"></div>
                             <div class="containerTexto">
                                 <div class="texto">
@@ -94,8 +96,8 @@
                         </a>
                     </div>
                     <div class="containerImagem">
-                        <a target="_blank" href="">
-                            <img src="imagens/top10/photo-07.jpg" alt="imagem de floresta">
+                        <a target="_blank">
+                            <img src="imagens/top10/photo-07.jpg" alt="imagem de floresta" onclick="cliqueModal(this)">
                             <div class="degrade"></div>
                             <div class="containerTexto">
                                 <div class="texto">
@@ -106,8 +108,8 @@
                         </a>
                     </div>
                     <div class="containerImagem">
-                        <a target="_blank" href="">
-                            <img src="imagens/top10/photo-09.jpg" alt="imagem de aguas-vivas">
+                        <a target="_blank">
+                            <img src="imagens/top10/photo-09.jpg" alt="imagem de aguas-vivas" onclick="cliqueModal(this)">
                             <div class="degrade"></div>
                             <div class="containerTexto">
                                 <div class="texto">
@@ -120,8 +122,8 @@
                 </div>
                 <div class="coluna" id="coluna2">
                     <div class="containerImagem">
-                        <a target="_blank" href="">
-                            <img src="imagens/top10/photo-02.jpg" alt="imagem de um vale" />
+                        <a target="_blank">
+                            <img src="imagens/top10/photo-02.jpg" alt="imagem de um vale" onclick="cliqueModal(this)">
                             <div class="degrade"></div>
                             <div class="containerTexto">
                                 <div class="texto">
@@ -132,8 +134,8 @@
                         </a>
                     </div>
                     <div class="containerImagem">
-                        <a target="_blank" href="">
-                            <img src="imagens/top10/photo-04.jpg" alt="imagem de pinheiros" />
+                        <a target="_blank">
+                            <img src="imagens/top10/photo-04.jpg" alt="imagem de pinheiros" onclick="cliqueModal(this)">
                             <div class="degrade"></div>
                             <div class="containerTexto">
                                 <div class="texto">
@@ -144,8 +146,8 @@
                         </a>
                     </div>
                     <div class="containerImagem">
-                        <a target="_blank" href="">
-                            <img src="imagens/top10/photo-06.jpg" alt="imagem de cachoeiras" />
+                        <a target="_blank">
+                            <img src="imagens/top10/photo-06.jpg" alt="imagem de cachoeiras" onclick="cliqueModal(this)">
                             <div class="degrade"></div>
                             <div class="containerTexto">
                                 <div class="texto">
@@ -156,8 +158,8 @@
                         </a>
                     </div>
                     <div class="containerImagem">
-                        <a target="_blank" href="">
-                            <img src="imagens/top10/photo-08.jpg" alt="imagem de caminhada no deserto" />
+                        <a target="_blank">
+                            <img src="imagens/top10/photo-08.jpg" alt="imagem de caminhada no deserto" onclick="cliqueModal(this)">
                             <div class="degrade"></div>
                             <div class="containerTexto">
                                 <div class="texto">
@@ -168,8 +170,8 @@
                         </a>
                     </div>
                     <div class="containerImagem">
-                        <a target="_blank" href="">
-                            <img src="imagens/top10/photo-10.jpg" alt="imagem de bambuzal" />
+                        <a target="_blank">
+                            <img src="imagens/top10/photo-10.jpg" alt="imagem de bambuzal" onclick="cliqueModal(this)">
                             <div class="degrade"></div>
                             <div class="containerTexto">
                                 <div class="texto">
@@ -384,8 +386,13 @@
             </div>
         </footer>
     </main>
-    <script type="text/JavaScript" src="js/versao.1.js"></script>
 
+
+    <div id="janela-modal" class="janela-modal esconde-janela-modal">
+        <span id="btn-fechar" class="fechar-modal">X</span>
+        <img id="img-modal" class="img-modal" src="" alt="">
+    </div>
+    <script type="text/JavaScript" src="js/versao.1.js"></script>
 </body>
 
 </html>

@@ -1,21 +1,24 @@
 @media (max-width: 1300px) {
-    :root {
+     :root {
         font-size: 45%;
     }
 }
 
-@media (max-width: 1000px){
-    :root {
+@media (max-width: 1000px) {
+     :root {
         font-size: 35%;
     }
 }
 
 @media (max-width: 700px) {
-    :root {
+     :root {
         font-size: 50%;
     }
     .desktop {
         display: none;
+    }
+    h3 {
+        margin: 0px;
     }
     .mobile {
         width: 90vw;
@@ -30,7 +33,7 @@
         position: relative;
     }
     .linha {
-        top: -2px; 
+        top: -2px;
         /* left: 24px; */
         width: 100vw;
         height: 0px;
@@ -42,9 +45,7 @@
     .tweetMobile {
         width: 50%;
         text-align: center;
-
         color: #FFFFFF;
-        
         padding-bottom: 9.5px;
         border-bottom: 3px;
         z-index: 2;
@@ -60,7 +61,6 @@
         /* height: 29px; */
         text-align: center;
         color: #FFFFFF;
-
         padding-bottom: 9.5px;
         border-bottom: 3px;
         z-index: 2;
@@ -71,6 +71,7 @@
         font-weight: 700;
     }
     .containerGrupo {
+        margin-top: 15px;
         flex-direction: column;
         align-items: center;
     }
@@ -92,56 +93,21 @@
     .texto {
         font-size: 50%;
     }
-     .containerTweets {
+    .containerTweets {
         height: 31vw;
         padding: 5vw;
         font-size: 40%;
-        /*
-        width: 372px;
-        
-        justify-content: center;
-        align-items: center; /
-    } 
-    .userName {
-        font-weight: 700;
-        font-size: 12px;
-        margin-right: 13px;
     }
-    .twitterUserName {
-        font-weight: 500;
-        font-size: 15px;
-        opacity: 0.43;
-        margin-top: 0px;
-    }
-    /* .containerTextosTwitter {
-        height: 84px;
-        top: 802px;
-        left: 105px;
-        width: 248px;
-        
-        opacity: 1;
-    } 
-    .textoTweet {
-        margin: 0;
-        height: 20px;
-        font-size: 50%;
-        letter-spacing: 0.23px;
-        display: flex;
-        flex-wrap: wrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    } */}
 }
 
 @media (max-width: 550px) {
-    :root {
+     :root {
         font-size: 42%;
     }
 }
 
-
 @media (max-width: 440px) {
-    :root {
+     :root {
         font-size: 40%;
     }
     .mobile {
@@ -168,7 +134,7 @@
 }
 
 @media (max-width: 380px) {
-    :root {
+     :root {
         font-size: 32%;
     }
     .mobile {
