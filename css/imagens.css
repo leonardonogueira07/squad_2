@@ -239,8 +239,10 @@ footer {
 .img-modal {
     margin: auto;
     display: block;
-    width: 40;
-    max-width: auto;
+    width: 80vw;
+    max-width: 80vw;
+    max-height: 80vh;
+    object-fit: scale-down;
 }
 
 .fechar-modal {
