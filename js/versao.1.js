@@ -6,15 +6,18 @@ window.addEventListener('scroll', function(){
 })
 
 //Campo de Busca 
-let busca = document.querySelector('#txt-busca').value;
-
-
-
-/*
 function validaBusca() {
-    
-}
+    if (
+    document.getElementById('txt-busca').value != ''
+     )  { 
+         console.log('Busca Invalida!')
+         return false;
+          }
+          console.log('Busca Valida!')
+          return true;
+    }
 
+ /*  
 
 https://api.twitter.com/1.1/search/tweets.json */
 

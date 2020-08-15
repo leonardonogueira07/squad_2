@@ -28,15 +28,18 @@
     </div>
     <!--==========HERO BANNER / BUSCA==========-->
     <section class="hero-image">
+        <div class="hero-image-drop">
+            
+        </div>
         <section class="hero-text">
             <h1>Encontre hashtags<br>de maneira fácil.</h1>
             <p>Digite o que deseja no campo de buscas e <br>confira os resultados do Twitter abaixo</p>
         </section>
         <section class="hero-busca">
-            <input type="text" id="txt-busca" class="input" placeholder="Buscar...">
+            <input type="text" id="txt-busca" onclick="validaBusca()" class="input" placeholder="Buscar...">
             <!--CAMPO PARA JS - MSG DE ERRO-->
-            <!--BuscaPrivsoria-->
-            <p id="message"></p>
+            <!--BuscaPrivsoria- onkeydown-->
+            <div id="message"></div>
         </section>
     </section>   
 
