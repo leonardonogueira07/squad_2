@@ -74,6 +74,7 @@
         flex-direction: column;
         align-items: center;
     }
+
     .containerGaleria {
         margin-top: 8.93rem;
         margin-right: 0px;
@@ -96,6 +97,11 @@
         height: 31vw;
         padding: 5vw;
         font-size: 40%;
+    }
+
+    /* Desativa o conteiner das imagens em um primeiro momento no mobile */
+    #imagens { 
+        display: none;
     }
 }
 
