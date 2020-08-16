@@ -37,7 +37,6 @@ h3 {
 
 .containerGrupo {
     width: 100%;
-    max-width: 1900px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
