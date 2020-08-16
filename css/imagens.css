@@ -61,7 +61,13 @@ h3 {
     width: 100%;
     border-radius: 1.2vw;
     vertical-align: middle;
+    object-fit: cover;
 }
+
+.containerGaleria img:hover {
+    border: solid 1px #0A1744;
+}
+
 
 .coluna {
     flex: 46.32%;
@@ -251,5 +257,14 @@ footer {
     right: 35px;
     color: #72efdb;
     font-size: 40px;
+    cursor: pointer;
+}
+
+.visitar-tweet {
+    position: absolute;
+    top: 30px;
+    left: 35px;
+    color: #72efdb;
+    font-size: 25px;
     cursor: pointer;
 }

@@ -53,8 +53,8 @@
             </h3>
             <!-- aparecer no mobile -->
             <div class="mobile ">
-                <div class="tweetMobile" onclick="esconderImagens()">Tweets</div>
-                <div class="imagensMobile " onclick="esconderTweets()">Imagens</div>
+                <div id="tweetMobile" class="botaoAbas botaoAbasSelecionado" onclick="esconderImagens()">Tweets</div>
+                <div id="imagensMobile" class="botaoAbas" onclick="esconderTweets()">Imagens</div>
                 <div class="linha"></div>
             </div>
 
@@ -391,6 +391,10 @@
     <div id="janela-modal" class="janela-modal esconde-janela-modal">
         <span id="btn-fechar" class="fechar-modal">X</span>
         <img id="img-modal" class="img-modal" src="" alt="">
+        <a>
+            <span id="visitar-tweet" class="visitar-tweet">Ver no Twitter</span>
+        </a>
+        
     </div>
     <script type="text/JavaScript" src="js/versao.1.js"></script>
 </body>

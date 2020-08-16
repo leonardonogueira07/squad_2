@@ -32,6 +32,7 @@
         align-items: center;
         position: relative;
     }
+
     .linha {
         top: -2px;
         /* left: 24px; */
@@ -42,7 +43,9 @@
         position: relative;
         z-index: 1;
     }
-    .tweetMobile {
+    /* ---- Configura os botões de troca de abas no mobile ---- */
+    .botaoAbas { 
+        /* Configuração padrão do botão */ 
         width: 50%;
         text-align: center;
         color: #FFFFFF;
@@ -50,25 +53,17 @@
         border-bottom: 3px;
         z-index: 2;
     }
-    .tweetMobile:hover {
-        color: #72EFDB;
-        border-bottom: 3px solid #72EFDB;
-        ;
-        font-weight: 700;
-    }
-    .imagensMobile {
-        width: 50%;
-        text-align: center;
-        color: #FFFFFF;
-        padding-bottom: 9.5px;
-        border-bottom: 3px;
-        z-index: 2;
-    }
-    .imagensMobile:hover {
+    .botaoAbasSelecionado {
+        /* Configuração do botão quando selecionado*/ 
         color: #72EFDB;
         border-bottom: 3px solid #72EFDB;
         font-weight: 700;
     }
+    .botaoAbas:hover {
+        /* Modifica o cursor quando o usuário passa o mouse por cima do botão*/
+        cursor: pointer;
+    }
+
     .containerGrupo {
         margin-top: 15px;
         flex-direction: column;
