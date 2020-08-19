@@ -9,8 +9,8 @@
     <link rel="stylesheet" type="text/css" href="css/imagens.css">
     <link rel="stylesheet" type="text/css" href="css/imagensMobile.css">    
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,700;1,500&display=swap" rel="stylesheet">
-    <!-- Implementação Javascript-->
-    <script type="text/javascript" src="/js/index.js"></script>
+    <!--Script com "defer" para que seja carregado depois da renderização da página (obs. "defer" não funciona com scripts inline)-->
+    <script type="text/JavaScript" src="js/tweetScroll.js" defer></script>
 </head>
 <body>    
     <main>
@@ -184,9 +184,10 @@
 
             <!----------------------------------------- Container TWEETS  ------------------------------------------------->
             <!----------------------------------------- Container que segura todas as divs dos TWEETS relacionados a pesquisa ------------------------------------------------->
-            <div class="containerGaleriaTweets" id="Tweets1" >
+            <div class="containerGaleriaTweets">
+                
                 <!-- Container 1 -->
-                <div class="containerTweets" id="Tweets1">
+                <div class="containerTweets">
                     <div class="grupoTweets">
                         <img src="imagens/fotos-perfis/fashion-photography-of-woman-hands-on-chin-with-glitter-1081685_Easy-Resize.com.jpg" alt="imagem de mulher com a mão no queixo" />
                         <div class="containerTextosTwitter">
@@ -203,8 +204,9 @@
                         </div>
                     </div>
                 </div>
-                <!-- Container 2 -->
-                <div class="containerTweets"id="Tweets2" >
+
+                <!--Container 2-->
+                <div class="containerTweets">
                     <div class="grupoTweets">
                         <img src="imagens/fotos-perfis/adult-blur-boy-daylight-428361_Easy-Resize.com.jpg" alt="imagem de mulher com a mão no queixo" />
 
@@ -222,9 +224,9 @@
                         </div>
                     </div>
                 </div>
-                <!-- Container 3 -->
-                <div class="containerTweets"id="Tweets3">
 
+                <!--Container 3-->
+                <div class="containerTweets">
                     <div class="grupoTweets">
                         <img src="imagens/fotos-perfis/grayscale-photo-of-a-man-near-wall-1370750_Easy-Resize.com.jpg" alt="imagem de mulher com a mão no queixo" />
 
@@ -242,8 +244,9 @@
                         </div>
                     </div>
                 </div>
-                <!-- Container 4 -->
-                <div class="containerTweets" id="Tweets4">
+
+                <!--Container 4-->
+                <div class="containerTweets">
                     <div class="grupoTweets">
                         <img src="imagens/fotos-perfis/looking-up-woman-wearing-blue-v-neck-top-1674752_Easy-Resize.com.jpg" alt="imagem de mulher com a mão no queixo" />
 
@@ -261,8 +264,9 @@
                         </div>
                     </div>
                 </div>
-                <!-- Container 5 -->
-                <div class="containerTweets" id="Tweets5">
+
+                <!--Container 5-->
+                <div class="containerTweets">
                     <div class="grupoTweets">
                         <img src="imagens/fotos-perfis/men-s-blue-dress-shirt-1043471_Easy-Resize.com.jpg" alt="imagem de mulher com a mão no queixo" />
 
@@ -279,10 +283,10 @@
                             </a>
                         </div>
                     </div>
-
                 </div>
-                <!-- Container 6 -->
-                <div class="containerTweets" id="Tweets6">
+
+                <!--Container 6-->
+                <div class="containerTweets">
                     <div class="grupoTweets">
                         <img src="imagens/fotos-perfis/monochrome-photo-of-man-smiling-1484794_Easy-Resize.com.jpg" alt="imagem de mulher com a mão no queixo" />
 
@@ -300,8 +304,9 @@
                         </div>
                     </div>
                 </div>
-                <!-- Container 7 -->
-                <div class="containerTweets" id="Tweets7">
+
+                <!--Container 7-->
+                <div class="containerTweets">
                     <div class="grupoTweets">
                         <img src="imagens/fotos-perfis/monochrome-photo-of-man-smiling-1484794_Easy-Resize.com.jpg" alt="imagem de mulher com a mão no queixo" />
 
@@ -319,8 +324,9 @@
                         </div>
                     </div>
                 </div>
-                <!-- Container 8 -->
-                <div class="containerTweets" id="Tweets8">
+
+                <!--Container 8-->
+                <div class="containerTweets">
                     <div class="grupoTweets">
                         <img src="imagens/fotos-perfis/monochrome-photo-of-man-smiling-1484794_Easy-Resize.com.jpg" alt="imagem de mulher com a mão no queixo" />
 
@@ -338,8 +344,9 @@
                         </div>
                     </div>
                 </div>
-                <!-- Container 9 -->
-                <div class="containerTweets" id="Tweets9">
+
+                <!--Container 9-->
+                <div class="containerTweets">
                     <div class="grupoTweets">
                         <img src="imagens/fotos-perfis/monochrome-photo-of-man-smiling-1484794_Easy-Resize.com.jpg" alt="imagem de mulher com a mão no queixo" />
                         <div class="containerTextosTwitter">
@@ -356,8 +363,9 @@
                         </div>
                     </div>
                 </div>
-                <!-- Container 10 -->
-                <div class="containerTweets" id="Tweets10">
+
+                <!--Container 10-->
+                <div class="containerTweets">
                     <div class="grupoTweets">
                         <img src="imagens/fotos-perfis/monochrome-photo-of-man-smiling-1484794_Easy-Resize.com.jpg" alt="imagem de mulher com a mão no queixo" />
                         <div class="containerTextosTwitter">
@@ -387,7 +395,6 @@
     <!--JavaScript-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/JavaScript" src="js/versao.1.js"></script>
-    
 </body>
 </html>
 
