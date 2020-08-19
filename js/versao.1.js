@@ -14,6 +14,7 @@ window.onload = function() {
            document.getElementById('message').innerHTML = "Enviado!"
            var limpa = document.getElementById('txt-busca').value;
            limpa.replace("#","");
+           document.getElementById('txt-busca').value = "";
        }
    };
    
