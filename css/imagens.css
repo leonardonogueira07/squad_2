@@ -51,6 +51,7 @@ h3 {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
+    overflow-x: hidden;
 }
 
 .containerGaleria {
@@ -156,6 +157,13 @@ h3 {
 
 
 .containerTweets {
+    position: relative;
+    left: 100px;
+    opacity: 0;
+    max-height: 20px;
+    overflow: hidden;
+    pointer-events: none;
+    
     max-width: 92.5rem;
     width: 100%;
     height: 23.8rem;
@@ -170,9 +178,12 @@ h3 {
     border-radius: 1.8rem;
     margin-bottom: 4.2rem;
 }
-.anim {
-    background: #7b291e7a;
-    transition: background .5s ease;
+.containerTweetsAnim {
+    left: 0px;
+    opacity: 1;
+    transition: left .5s ease, opacity .5s ease;
+    max-height: none;
+    pointer-events: all;
 }
 
 .containerTweets img {
