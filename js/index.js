@@ -49,22 +49,25 @@ document.querySelector('body').onload = function() {
     }; 
     
     
-    //EFEITO TWEETS
+  //EFEITO TWEETS
 
-	let tweetElements = document.querySelectorAll('.containerTweets'),
-		windowHeight = document.documentElement.clientHeight;
+  // Elementos que devem aparecer conforme o usuário desce a página
+	let tweetElements = document.querySelectorAll('.containerTweets');
 
-
+  // Função que será rodada sempre que o usuário mexer no scroll da página
 	function tweetAnimScroll() {
 
 		for (tweet of tweetElements) {
 
-			if (tweet.getBoundingClientRect().top <= windowHeight - tweet.getBoundingClientRect().height) {
+      // Se o elemento estiver visível dentro da janela
+			if (tweet.getBoundingClientRect().top <= document.documentElement.clientHeight - tweet.getBoundingClientRect().height) {
+        // Adicionar a classe que mudará suas propriedades CSS
 				tweet.classList.add('containerTweetsAnim');
 			}
 		}
 	}
 
+  // Chamar a função ao carregar a página, e depois sempre que o usuário mexer no scroll
 	tweetAnimScroll();
 	document.querySelector('body').onscroll = tweetAnimScroll;
 }
