@@ -110,6 +110,7 @@ body, h1, p {font-family: 'Rubik', Regular;}
     margin-bottom: -25px;
     z-index:30;
     border-style: none; 
+    color: white;
 }
 .hero-busca {
     margin-top: 150px;

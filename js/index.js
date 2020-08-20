@@ -12,13 +12,14 @@ window.onload = function() {
            //window.alert('deu');
            document.getElementById('txt-busca').click();
            document.getElementById('message').innerHTML = "Enviado!"
-           let limpa = document.getElementById('txt-busca').value;
-           limpa.replace("#","");
-           document.getElementById('txt-busca').value = "";
+          // let limpa = document.getElementById('txt-busca').value;
+          // limpa.replace("#","");
+          // document.getElementById('txt-busca').value = "";
        }
-   };
-   
-} */
+   };   
+} 
+*/
+
 // VALIDAÇÃO DO CAMPO DE BUSCA COM LIMITE DE CARACTERE
 let txtBusca = $('#txt-busca');
 txtBusca.on('keydown', function(){
@@ -27,7 +28,7 @@ txtBusca.on('keydown', function(){
 txtBusca.on('keydown', function(){
   let validacaoBusca = txtBusca.val().length < 140;
   if(!validacaoBusca){
-    document.getElementById('message').innerHTML = "<p style='color: red;'>Ultrapassou de 140 caracteres!</p>"; 
+    document.getElementById('message').innerHTML = "<p style='color: yellow;'>Ultrapassou de 140 caracteres!</p>"; 
   } else {
     document.getElementById('message').innerHTML = ""; 
   }
@@ -42,11 +43,10 @@ document.querySelector('body').onload = function() {
             //window.alert('deu');
             document.getElementById('txt-busca').click();
             document.getElementById('message').innerHTML = "Enviado!"
-            let limpa = document.getElementById('txt-busca').value;
-            limpa.replace("#","");
-            document.getElementById('txt-busca').value = "";
+            document.getElementById('txt-busca').onfocus("")
+            
         }
-    };
+    }; 
     
     
     //EFEITO TWEETS
