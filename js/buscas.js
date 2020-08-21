@@ -1,5 +1,6 @@
-
+/*javascript para paginação da tabela*/
 $('#oculto').hide();
+/*codigo para estabelecer numero de paginas*/
 $(document).ready(function(){
     $('#tabela').after('<div id="nav" ></div>');
     var rowsShown = 20;
@@ -7,10 +8,13 @@ $(document).ready(function(){
     var numPages = rowsTotal/rowsShown;
     for(i = 0;i < numPages;i++) {
         var pageNum = i + 1;
+        /*criação da numeração das paginas*/
         $('#nav').append('<a href="#" rel="'+i+'" style="color: #72EFDB;">'+pageNum+'</a> ');
     }
+    /*seleção das rows visiveis*/
     $('#tabela tbody tr').hide();
     $('#tabela tbody tr').slice(0, rowsShown).show();
+    /*link ativo da numeração*/
     $('#nav a:first').addClass('active');
     $('#nav a').bind('click', function(){
 
