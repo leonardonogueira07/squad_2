@@ -160,6 +160,9 @@ body, h1, p {font-family: 'Rubik', Regular;}
     }
 }
 @media (max-width: 450px) {   
+    .container {
+        width: 100%;
+    }
     .hero-image {
         display: flex;
         flex-direction: column;

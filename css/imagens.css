@@ -146,7 +146,7 @@ h3 {
 
 .containerTweets {
     position: relative;
-    left: 100px;
+    left: 10px;
     opacity: 0;
     max-height: 20px;
     overflow: hidden;
