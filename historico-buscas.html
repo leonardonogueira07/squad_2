@@ -1,8 +1,9 @@
-
+ 
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HashtagFinder | Histórico de Buscas</title>
      <!--Favicon-->
         <link rel="icon" href="./svg/favicon.ico" type="image/x-icon">
@@ -13,17 +14,17 @@
   </head>
   <body style="background-color: #0A1744; color: #FCFCFC;">
     <!--=====MENU====-->
-    <header class="menu">
-      <a href="./index.html" target="_parent">
-          <img class="logo" src="svg/logo.svg" alt="HashtagFinder">
-      </a>
-      <nav>
-          <ul class="topicos">  
-              <li><a class="home" href="./index.html"><strong>home</strong></a></li>
-              <li><a class="sair" href="./meu-login.html"><strong>sair</strong></a></li>                  
-          </ul>
-      </nav>
-    </header>
+    <div class="container">
+      <div class="logo">
+          <a href="./index.html" target="_parent">
+              <img src="svg/logo.svg" alt="HashtagFinder">
+          </a>
+      </div>
+      <div class="menu">  
+          <a class="home" href="./index.html"><img src="svg/icon-home.svg" alt="Home">home</a>
+          <a class="sair" href="./Login.html"><img src="svg/icon-power-off.svg" alt="Sair">sair</a>                
+      </div>
+  </div>
 
     <!--
     Mostrador de itens mais procurados       
@@ -31,30 +32,33 @@
     <div class="busca-realizada"> 
       <h1>Buscas realizadas</h1>
 
-      <table>
+      <table id="tabela">
         <thead>
           <tr id="cabeca"> 
-            <th class="primeiro">
+            <th class="primeiro" style="background-color: rgba(0, 12, 85, 1);">
               <div class ="coluna">
                 Hashtag
               </div>
           </th>
-          <th class="verde">Data</th>
-          <th class="verde" id="topo-direita">hora</th>
+          <th class="verde" style="background-color: rgba(0, 12, 85, 1);">Data</th>
+          <th class="verde" id="topo-direita" style="background-color: rgba(0, 12, 85, 1);">hora</th>
         </tr>
       </thead>
       <tbody>
         <!--Row oculta para caso não existam buscas-->
-        <tr id="oculto">
-          <td id="vazio" colspan="1">
+        <!--<tr id="oculto" style="display:none;">
+          <td id="vazio" colspan="1" style="display:none;">
             <div>
               Ops, ainda não existem buscas realizadas
             </div>
           </td>
           <td></td>
           <td></td>
-        </tr>
-          <tr>
+        </tr>-->
+          <tr class="linha">
+            <td class="linha" colspan="3"><div class="expessura"></div></td>
+          </tr>
+          <tr class="corpo">
             <td>
               <div class ="coluna">
                 Hashtag
@@ -63,7 +67,10 @@
             <td class="verde">25/02</td>
             <td class="verde">09:30</td>
           </tr>
-          <tr>
+          <tr class="linha">
+            <td class="linha" colspan="3"><div class="expessura"></div></td>
+          </tr>
+          <tr class="corpo">
             <td>
               <div class ="coluna">
                 Hashtag
@@ -72,7 +79,10 @@
             <td class="verde">25/02</td>
             <td class="verde">09:30</td>
           </tr>
-          <tr>
+          <tr class="linha">
+            <td class="linha" colspan="3"><div class="expessura"></div></td>
+          </tr>
+          <tr class="corpo">
             <td>
               <div class ="coluna">
                 Hashtag
@@ -81,7 +91,10 @@
             <td class="verde">25/02</td>
             <td class="verde">09:30</td>
           </tr>
-          <tr>
+          <tr class="linha">
+            <td class="linha" colspan="3"><div class="expessura"></div></td>
+          </tr>
+          <tr class="corpo">
             <td>
               <div class ="coluna">
                 Hashtag
@@ -90,7 +103,10 @@
             <td class="verde">25/02</td>
             <td class="verde">09:30</td>
           </tr>
-          <tr>
+          <tr class="linha">
+            <td class="linha" colspan="3"><div class="expessura"></div></td>
+          </tr>
+          <tr class="corpo">
             <td>
               <div class ="coluna">
                 Hashtag
@@ -99,7 +115,10 @@
             <td class="verde">25/02</td>
             <td class="verde">09:30</td>
           </tr>
-          <tr>
+          <tr class="linha">
+            <td class="linha" colspan="3"><div class="expessura"></div></td>
+          </tr>
+          <tr class="corpo">
             <td>
               <div class ="coluna">
                 Hashtag
@@ -108,7 +127,46 @@
             <td class="verde">25/02</td>
             <td class="verde">09:30</td>
           </tr>
-          <tr id="final">
+          <tr class="linha">
+            <td class="linha" colspan="3"><div class="expessura"></div></td>
+          </tr>
+          <tr class="corpo">
+            <td>
+              <div class ="coluna">
+                Hashtag
+              </div>
+            </td>
+            <td class="verde">25/02</td>
+            <td class="verde">09:30</td>
+          </tr>
+          <tr class="linha">
+            <td class="linha" colspan="3"><div class="expessura"></div></td>
+          </tr>
+          <tr class="corpo">
+            <td>
+              <div class ="coluna">
+                Hashtag
+              </div>
+            </td>
+            <td class="verde">25/02</td>
+            <td class="verde">09:30</td>
+          </tr>
+          <tr class="linha">
+            <td class="linha" colspan="3"><div class="expessura"></div></td>
+          </tr>
+          <tr class="corpo">
+            <td>
+              <div class ="coluna">
+                Hashtag
+              </div>
+            </td>
+            <td class="verde">25/02</td>
+            <td class="verde">09:30</td>
+          </tr>
+          <tr class="linha">
+            <td class="linha" colspan="3"><div class="expessura"></div></td>
+          </tr>
+          <tr class="corpo">
             <td id="inferior-esquerda">
               <div class ="coluna">
                 Hashtag
@@ -117,9 +175,132 @@
             <td class="verde">25/02</td>
             <td class="verde" id="inferior-direita">09:30</td>
           </tr>
-        </tbody>  
+          <tr class="linha">
+            <td class="linha" colspan="3"><div class="expessura"></div></td>
+          </tr>
+          <tr class="corpo">
+            <td>
+              <div class ="coluna">
+                Hashtag
+                </div>
+              </td>   
+            <td class="verde">25/02</td>
+            <td class="verde">09:30</td>
+          </tr>
+          <tr class="linha">
+            <td class="linha" colspan="3"><div class="expessura"></div></td>
+          </tr>
+          <tr class="corpo">
+            <td>
+              <div class ="coluna">
+                Hashtag
+              </div>
+            </td> 
+            <td class="verde">25/02</td>
+            <td class="verde">09:30</td>
+          </tr>
+          <tr class="linha">
+            <td class="linha" colspan="3"><div class="expessura"></div></td>
+          </tr>
+          <tr class="corpo">
+            <td>
+              <div class ="coluna">
+                Hashtag
+              </div>
+            </td>
+            <td class="verde">25/02</td>
+            <td class="verde">09:30</td>
+          </tr>
+          <tr class="linha">
+            <td class="linha" colspan="3"><div class="expessura"></div></td>
+          </tr>
+          <tr class="corpo">
+            <td>
+              <div class ="coluna">
+                Hashtag
+              </div>
+            </td>
+            <td class="verde">25/02</td>
+            <td class="verde">09:30</td>
+          </tr>
+          <tr class="linha">
+            <td class="linha" colspan="3"><div class="expessura"></div></td>
+          </tr>
+          <tr class="corpo">
+            <td>
+              <div class ="coluna">
+                Hashtag
+              </div>
+            </td>
+            <td class="verde">25/02</td>
+            <td class="verde">09:30</td>
+          </tr>
+          <tr class="linha">
+            <td class="linha" colspan="3"><div class="expessura"></div></td>
+          </tr>
+          <tr class="corpo">
+            <td>
+              <div class ="coluna">
+                Hashtag
+              </div>
+            </td>
+            <td class="verde">25/02</td>
+            <td class="verde">09:30</td>
+          </tr>
+          <tr class="linha">
+            <td class="linha" colspan="3"><div class="expessura"></div></td>
+          </tr>
+          <tr class="corpo">
+            <td>
+              <div class ="coluna">
+                Hashtag
+              </div>
+            </td>
+            <td class="verde">25/02</td>
+            <td class="verde">09:30</td>
+          </tr>
+          <tr class="linha">
+            <td class="linha" colspan="3"><div class="expessura"></div></td>
+          </tr>
+          <tr class="corpo">
+            <td>
+              <div class ="coluna">
+                Hashtag
+              </div>
+            </td>
+            <td class="verde">25/02</td>
+            <td class="verde">09:30</td>
+          </tr>
+          <tr class="linha">
+            <td class="linha" colspan="3"><div class="expessura"></div></td>
+          </tr>
+          <tr class="corpo">
+            <td>
+              <div class ="coluna">
+                Hashtag
+              </div>
+            </td>
+            <td class="verde">25/02</td>
+            <td class="verde">09:30</td>
+          </tr>
+          <tr class="linha">
+            <td class="linha" colspan="3"><div class="expessura"></div></td>
+          </tr>
+          <tr class="corpo">
+            <td>
+              <div class ="coluna">
+                Hashtag
+                </div>
+              </td>   
+            <td class="verde">25/02</td>
+            <td class="verde">09:30</td>
+          </tr>
+        </tbody>
       </table>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <script src="js/buscas.js"></script>
+    <script type="text/JavaScript" src="js/index.js"></script>
   </body>
-
 </html>

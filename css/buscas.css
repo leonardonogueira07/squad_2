@@ -1,42 +1,35 @@
 body{
-    background-image: linear-gradient(to right, #143271 , #091d51);
+    background-image: radial-gradient(ellipse farthest-corner at 6px 96rem , rgba(18,43,103) 27%, #003577 58%, rgba(9,30,84) 80%);
     width: 100%;
+    background-attachment: fixed;
 }
-
 h1
 {   padding-top: 150px;
     color: #72EFDB;
-    margin-left: 10%;
+    margin-left: 13%;
     font-family: 'rubik', sans-serif ;
     padding-bottom: 40px;
 }
-
 table{
     position: relative;
     border: 0px, none;
     border-collapse: collapse;
     width: 50%;
-    margin-left: 10%;
+    margin-left: 13%;
     margin-bottom: 15px;
 }
 .primeiro {
     border: 2px, solid,#18326B;
     border-top-left-radius: 15px;
-
 }
-#cabeca
-{
+#cabeca{
     background-color: #0c1f49;
     opacity: 1;
-
-}
-   
+}   
 thead{
-    color: #72EFDB;
-  
+    color: #72EFDB; 
 }
-#topo-direita{
-   
+#topo-direita{ 
     border: 2px, solid, #18326B;
     border-top-right-radius: 15px;
 }
@@ -48,19 +41,17 @@ thead{
     border: 2px, solid, #18326B;
     border-bottom-left-radius: 15px;
 }
-tbody{
-    background-color: #0c1f49;
+#tabela {
+    background-color: rgba(0, 29, 110, 0.78);
     opacity: 0.7;
 }
-
 th{
-    padding-left: 10px;
+    padding-left: 20px;
     font-family: 'rubik', sans-serif;
-    text-indent: 15px;
-   
+    text-indent: 15px;  
 }
 td {
-    padding-left: 10px;
+    padding-left: 20px;
     font-family: 'montserrat', sans-serif, regular;
     text-indent: 15px;
 }
@@ -68,14 +59,18 @@ tr{
     opacity: 1;
     height: 80px;  
 }
-
-th, td {
-    border-bottom: 1px solid rgb(132, 179, 197);;
+.linha {
+    width: 100%;
+    height: 2px;
+    
 }
-#final{
-    border: 0px, none;
-    border-style: none;
-    border-bottom: hidden;
+.expessura {
+    width: 100%;
+    height: 2px;
+    margin: 0px;
+    padding: 0px;
+    background-image: linear-gradient(to right, #0a1744, #003c6d, #006392, #008daf, #00b7c6, #00b7c6, #00b7c6, #00b7c6, #008daf, #006392, #003c6d, #0a1744);
+    opacity: 0.3;
 }
 .primeiro{
     text-align: left;
@@ -90,11 +85,9 @@ th, td {
     width: 50vw;
 }
 
-/*Código preparado para qundo não houverem buscas realizadas*/
+/*Código preparado para quando não houverem buscas realizadas*/
 
-#oculto {
-    display: none;
-}
+
 tbody tr:not(#oculto){
     display:;
 }
@@ -112,7 +105,37 @@ tbody tr:not(#oculto){
 #oculto:last-child {
     border-bottom-right-radius: 20px;
 }
-/*Fim do estilo da td oculta*/
+
+
+#data tr {
+    display: none;
+  }
+
+tbody, table {
+    border-radius: 15px;
+   
+} 
+#nav a  {
+    text-decoration: none;
+    margin-right: 30px;
+    opacity: 0.7;
+}
+#nav a:hover {
+    
+    opacity: 1;
+}
+#nav {
+    width: 100%;
+    margin-left: 13%;
+    margin-bottom: 20px;
+    
+}
+
+table:last-child  {
+    border: hidden;
+}
+
+  /*Fim do estilo da td oculta*/
 /*Estilo do iframe que foi utilizado para o menu visando reduzir o código*/
 
 /*Código para estilo em telas reduzidas*/
@@ -125,19 +148,25 @@ tbody tr:not(#oculto){
         display: inline-block;
         position: relative;
         margin-left: 0px;
-        font-size: 30px;
+        font-size: 20px;
         white-space: nowrap;
-        margin-bottom: 50px;
+        margin-top: 2px;
+        margin-bottom: 20px;
     }
     table {
-        width: 100px;
+        width: 90%;
         margin-left: auto;
         margin-right: auto;
     }
     tr {
+        
         margin-left: auto;
         margin-right: auto;;
         width: 80vw;
+    }
+    th, td {
+        padding-left: 0px;
+        font-size: 14px;
     }
     .coluna{
         width: 30vw;
@@ -145,7 +174,17 @@ tbody tr:not(#oculto){
     .primeiro{
        text-align: inherit;
     }
-    
+    #nav{
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+        position: relative;
+    }
+    #nav a  {
+       position: relative;
+       margin-left: 10px;
+       margin-right: 10px;
+    }
     
   }
   @media (max-width: 400px) {
