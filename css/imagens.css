@@ -8,24 +8,18 @@
     font-size: 60%;
 }
 
-* { padding: 0;
+* {
+    padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body {      
+body {
     font-family: 'Rubik', sans-serif;
     background: #0A1744 0% 0% no-repeat padding-box;
     color: #FCFCFC;
-    opacity: 1;    
+    opacity: 1;
 }
-
-
-/* main {
-    width: 100vw;
-    max-width: 1579.5px;
-    justify-content: center;
-} */
 
 h3 {
     width: 100vw;
@@ -47,14 +41,12 @@ h3 {
 }
 
 .containerGrupo {
-    margin: auto;
     width: 100%;
-    max-width: 1900px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    overflow-x: hidden;
+    background-color: #0A1744;
 }
 
 .containerGaleria {
@@ -66,12 +58,20 @@ h3 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    cursor: pointer;
 }
 
 .containerGaleria img {
     width: 100%;
+    height: 18vw;
+    max-height: 286px;
     border-radius: 1.2vw;
     vertical-align: middle;
+    object-fit: cover;
+}
+
+.containerGaleria img:hover {
+    border: solid 1px #0A1744;
 }
 
 .coluna {
@@ -80,7 +80,6 @@ h3 {
     flex-wrap: wrap;
     /* padding-right: 6.5%; */
 }
-
 
 .containerImagem {
     position: relative;
@@ -127,37 +126,23 @@ h3 {
     max-height: 117px;
     width: 100%;
     height: 50%;
-
     position: absolute;
     bottom: 0px;
     left: 0px;
-    
     background: transparent linear-gradient(180deg, #00000000 0%, #000000 100%) 0% 0% no-repeat padding-box;
     border-radius: 0px 0px 1.2vw 1.2vw;
     opacity: 0.83;
-
-
 }
 
 
 /* Parte dos Tweets */
 
 .containerGaleriaTweets {
-    /* max-width: 889px; */
     max-width: 92.5rem;
     width: 50vw;
     height: auto;
     float: left;
-    /*
-    max-width: 699px;
-    width: 40vw;
-    height: auto;
-    float: left;
-    margin-right: 40px;
-    */
 }
-
-
 
 .containerTweets {
     position: relative;
@@ -167,21 +152,19 @@ h3 {
     overflow: hidden;
     pointer-events: none;
     transition: left .5s ease, opacity .5s ease;
-    
     max-width: 92.5rem;
     width: 100%;
     height: 23.8rem;
     padding: 5.2rem;
     padding-top: 4.17rem;
-
     display: flex;
     flex-wrap: wrap;
-
     background: #1E3E7B17;
     border: 1px solid #FFFFFF24;
     border-radius: 1.8rem;
     margin-bottom: 4.2rem;
 }
+
 .containerTweetsAnim {
     left: 0px;
     opacity: 1;
@@ -194,8 +177,8 @@ h3 {
     width: 9rem;
     height: 9rem;
     margin-right: 3rem;
-
     float: left;
+    object-fit: cover;
 }
 
 .grupoTweets {
@@ -216,7 +199,6 @@ h3 {
 .containerUser {
     display: flex;
     align-items: center;
-    /* line-height: 32px; */
 }
 
 .userName {
@@ -236,14 +218,12 @@ h3 {
 .textoTweet {
     font-weight: 400;
     font-size: 2rem;
-    /* height: 72px; */
     height: 7.5rem;
     letter-spacing: 0.23px;
     display: flex;
     flex-wrap: wrap;
     overflow: hidden;
     text-overflow: ellipsis;
-
     color: #D9D9D9;
 }
 
@@ -254,7 +234,67 @@ h3 {
     font-size: 2.1rem;
 }
 
+footer {
+    clear: both;
+}
+
+
+/* ---------------------------  Janela Modal Imagens ----------------------- */
+
+
+/* janela criada para dar zoom nas imagens ao serem clicadas*/
+
+.janela-modal {
+    display: flex;
+    position: fixed;
+    z-index: 99999;
+    padding-top: 100px;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(11, 26, 73, 0.8);
+    overflow: hidden;
+}
+
+.mostrar-janela-modal {
+    display: block;
+}
+
+.esconde-janela-modal {
+    display: none;
+}
+
+.img-modal {
+    margin: auto;
+    display: block;
+    width: 80vw;
+    max-width: 80vw;
+    max-height: 80vh;
+    object-fit: scale-down;
+    align-items: center;
+}
+
+
+/* botao criado para fechar janela modal*/
+
+.fechar-modal {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #72efdb;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.visitar-tweet {
+    position: absolute;
+    top: 15px;
+    left: 35px;
+    color: #72efdb;
+    font-size: 20px;
+    cursor: pointer;
+}
+
 
 /* ---------------------------  Animação Tweets ----------------------- */
-
-
