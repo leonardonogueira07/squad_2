@@ -1,11 +1,11 @@
-//Efeito Menu Js
+//Efeito Menu Js Leonardo
 window.addEventListener('scroll', function(){
     let header = document.querySelector('.container');
     header.classList.toggle('scrolling-active', window.scrollY > 0);
 })
 
 //Campo de Busca / Validação em Enter - Eliminando Caractere
-/*
+/* 
 window.onload = function() {
     document.getElementById('txt-busca').onkeypress = function searchKeyPress(event) {
        if (event.keyCode == 13) {
@@ -19,6 +19,19 @@ window.onload = function() {
    };   
 } 
 */
+//CAMPO BUSCA VALIDAÇÃO COM TECLA ENTER - 
+document.getElementById('txt-busca').onkeypress = function searchKeyPress(event) {
+  if (event.keyCode == 13) {
+      document.getElementById('txt-busca').click();
+      document.getElementById('message').innerHTML = "Enviado!"
+      limparHashtag();      
+  }
+}; 
+
+// LIMPA CAMPO - RETIRADA DE #
+function limparHashtag(){
+  document.getElementById('txt-busca').value = document.getElementById('txt-busca').value.replace('#',"");
+}
 
 // VALIDAÇÃO DO CAMPO DE BUSCA COM LIMITE DE CARACTERE
 let txtBusca = $('#txt-busca');
@@ -34,22 +47,12 @@ txtBusca.on('keydown', function(){
   }
 })
 
-// Executar a seguinte função ao fim do carregamento do body
-document.querySelector('body').onload = function() {
 
-    //CAMPO BUSCA VALIDAÇÃO COM TECLA ENTER - LIMPA CAMPO - RETIRADA DE #
-    document.getElementById('txt-busca').onkeypress = function searchKeyPress(event) {
-        if (event.keyCode == 13) {
-            //window.alert('deu');
-            document.getElementById('txt-busca').click();
-            document.getElementById('message').innerHTML = "Enviado!"
-            document.getElementById('txt-busca').onfocus("")
-            
-        }
-    }; 
-    
-    
-  //EFEITO TWEETS
+// Executar a seguinte função ao fim do carregamento do body
+// document.querySelector('body').onload = function() {
+
+                
+  //PARTE MIGUEL E JORDANA - EFEITO TWEETS
 
   // Elementos que devem aparecer conforme o usuário desce a página
 	let tweetElements = document.querySelectorAll('.containerTweets');
@@ -66,8 +69,7 @@ document.querySelector('body').onload = function() {
 			}
 		}
 	}
-
   // Chamar a função ao carregar a página, e depois sempre que o usuário mexer no scroll
 	tweetAnimScroll();
 	document.querySelector('body').onscroll = tweetAnimScroll;
-}
+// }

@@ -34,7 +34,7 @@
             <p>Digite o que deseja no campo de buscas e <br>confira os resultados do Twitter abaixo</p>
         </section>
         <section class="hero-busca">
-            <input type="text" id="txt-busca" onfocus="this.value='';" class="input" placeholder="Buscar...">
+            <input type="text" id="txt-busca" onfocus="limparHashtag()" class="input" placeholder="Buscar...">
             <!--CAMPO PARA JS - MSG DE ERRO-->
             <!--BuscaPrivsoria- onkeydown-->
             <div id="message"></div>
@@ -396,7 +396,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/JavaScript" src="js/index.js"></script>
     <!--Script com "defer" para que seja carregado depois da renderização da página (obs. "defer" não funciona com scripts inline)-->
-    <!--<script type="text/JavaScript" src="js/tweetScroll.js" defer></script> (-->
+    <!--<script type="text/JavaScript" src="js/tweetScroll.js" defer></script>
 </body>
 </html>
 
