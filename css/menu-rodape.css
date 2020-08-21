@@ -185,6 +185,9 @@ body, h1, p {font-family: 'Rubik', Regular;}
     }
 }
 @media (max-width: 288px) {
+    .logo img{
+        height: 20px;
+    }    
     .hero-text h1 {
         font-size: 22px;
     }

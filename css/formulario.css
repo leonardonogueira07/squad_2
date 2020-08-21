@@ -1,4 +1,3 @@
- 
 
 /*--------FORMULARIO DE LOGIN--------*/
 
@@ -15,8 +14,8 @@
     background-size: cover;    
 }
 .imagem-fundo {
-    width: 420px;
-    min-width: 200px;
+    width: 25%;
+    height: 52vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,6 +28,7 @@
 .formulario{
     flex-shrink: 0;
     width: 100%;
+    font-family: rubik-bold;
     display: flex;
     padding:20px;
     flex-direction: column;
@@ -39,16 +39,28 @@
 .titulo-formulario{
     text-align: center;
     letter-spacing: 2px;
+    margin-top: 20px;
     margin-bottom: 60px;
     color: #72EFDB;
-    font-size: 40px;
+    font-size: 18px;
 }
 .corpo-formulario form{
-   width: 90%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   position: relative;
 }
-.corpo-formulario form input{
+.corpo-formulario{
+    width: 90%;
+}
+.input-wrapper{
+    margin-bottom: 5px;
+}
+.corpo-formulario input{
     width: 100%;
-    margin-bottom: 25px;
+    margin-bottom: 5px;
+    margin-top: 15px;
     border-top: 0px;
     border-left: 0px;
     border-right: 0px;
@@ -56,6 +68,7 @@
     border-color: azure;
     background-color: transparent;
     color: white;
+    padding-bottom: 2px;
 }
 .botao-acessar{
     text-align: center;
@@ -81,28 +94,30 @@
     border-right: 0px;
     border-bottom: 0px;
 }
+.wrap-input{
+    margin-top: 5px;
+}
+div#erroUsuario{
+    color: brown;
+    font-size: 0.8em;
+}
+div#erroSenha{
+    color: brown;
+    font-size: 0.8em;
+}
 ::-webkit-input-placeholder{
     color: white;
-    font-size: 15px;
+    font-size: 10px;
     letter-spacing: 2px;
 }
 
 /*---RESPONSIVIDADE--*/
 @media (max-width: 860px) and (orientation: landscape) {
+    
     .imagem-fundo {
         width: 50vw;
         height: 70vh;
         margin-top: 80px;
-    }
-    ::-webkit-input-placeholder{
-        font-size: 13px;
-    }
-    .titulo-formulario{
-        text-align: center;
-        letter-spacing: 2px;
-        margin-bottom: 10px;
-        color: #72EFDB;
-        font-size: 30px;
     }
     .corpo-formulario form input {
         width: 90%;
@@ -111,17 +126,148 @@
         border-bottom-width: 1px;
     }
 } 
-@media (max-width: 479px) { 
-    .imagem-fundo{
-        width: 45vw;
-        height: 45vh;
+@media (max-width: 768px) {
+    
+    .imagem-fundo {
+        width: 30%;
+        height: 54vh;
+       
     }
-    ::-webkit-input-placeholder{
-        font-size: 15px;
+    .titulo-formulario{ 
+        margin-top: 60px;
+        margin-bottom: 20px;
     }
     .corpo-formulario form input {
         width: 90%;
-        margin-bottom: 30px;
         border-bottom-width: 1px;
+        
     }
-}
+    .botao-acessar{
+        margin-bottom: 15px;
+        margin-top: 5px;
+    }
+    .botao-acessar button{
+        background: #72EFDB 0% 0%  padding-box;
+        border-radius: 34px;
+        width: 140px;
+        font-size: 10px;
+        letter-spacing: 0.57px;
+        color: #0B1741;
+        text-transform: uppercase;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    
+    
+} 
+@media (max-width: 425px) {
+    
+    .imagem-fundo {
+        width: 50%;
+        height: 56vh;
+       
+    }
+    .titulo-formulario{
+        margin-bottom: 60px;
+    }
+    .corpo-formulario form input {
+        width: 90%;
+        border-bottom-width: 1px;
+        
+    }
+    .botao-acessar{
+        margin-bottom: 15px;
+        margin-top: 5px;
+    }
+    .botao-acessar button{
+        background: #72EFDB 0% 0%  padding-box;
+        border-radius: 34px;
+        width: 140px;
+        font-size: 10px;
+        letter-spacing: 0.57px;
+        color: #0B1741;
+        text-transform: uppercase;
+        padding: 10px;
+        margin-bottom: 40px;
+        margin-top: 15px;
+    }
+    
+    ::-webkit-input-placeholder{
+        font-size: 10px;
+    }
+    
+} 
+@media (max-width: 375px) {
+    
+    .imagem-fundo {
+        width: 40%;
+        height: 56vh;
+       
+    }
+    .titulo-formulario{
+        margin-bottom: 60px;
+    }
+    .corpo-formulario form input {
+        width: 90%;
+        border-bottom-width: 1px;
+        
+    }
+    .botao-acessar{
+        margin-bottom: 15px;
+        margin-top: 5px;
+    }
+    .botao-acessar button{
+        background: #72EFDB 0% 0%  padding-box;
+        border-radius: 34px;
+        width: 110px;
+        font-size: 10px;
+        letter-spacing: 0.57px;
+        color: #0B1741;
+        text-transform: uppercase;
+        padding: 10px;
+        margin-bottom: 40px;
+        margin-top: 15px;
+    }
+    
+    ::-webkit-input-placeholder{
+        font-size: 10px;
+    }
+    
+} 
+@media (max-width: 320px) {
+    
+    .imagem-fundo {
+        width: 60%;
+        height: 56vh;
+       
+    }
+    .titulo-formulario{
+        margin-bottom: 60px;
+    }
+    .corpo-formulario form input {
+        width: 90%;
+        border-bottom-width: 1px;
+        
+    }
+    .botao-acessar{
+        margin-bottom: 15px;
+        margin-top: 5px;
+    }
+    .botao-acessar button{
+        background: #72EFDB 0% 0%  padding-box;
+        border-radius: 34px;
+        width: 140px;
+        font-size: 10px;
+        letter-spacing: 0.57px;
+        color: #0B1741;
+        text-transform: uppercase;
+        padding: 10px;
+        margin-bottom: 40px;
+        margin-top: 15px;
+    }
+    ::-webkit-input-placeholder{
+        font-size: 10px;
+    }
+    
+} 
+
