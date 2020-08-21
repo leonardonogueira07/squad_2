@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="icon" href="./svg/favicon.ico" type="image/x-icon">
+      <title>HashtagFinder | Login</title>
+      <link rel="stylesheet" type="text/css" href="css/menu-rodape.css">
+      <link rel="stylesheet" href="./formulario.css">
+      <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,700;1,500&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <main>
+        <!---=====MENU====-->
+        <div class="container">
+            <div class="menu">  
+                <div class="logo">
+                    <a href="./index.html" target="_parent">
+                        <img src="logo.svg" alt="HashtagFinder" class="img-logo">
+                    </a>
+                </div>
+                <a class="home" href="./index.html"><img src="icon-home.svg" alt="Home" class="img-home">
+                    <strong>HOME</strong> 
+                </a>                  
+            </div>
+        </div>    
+          <!-- Aqui vai o menu de navegação, se for necessário-->
+
+      <div class="content">
+        <div class="imagem-fundo">
+            <div class="formulario">
+                <div class="cabecario-formulario">
+                    <div class="titulo-formulario">
+                        <strong>Login</strong>
+                    </div>
+                </div>
+                <div class="corpo-formulario">
+                        <div class = "input-wrapper">
+                            <input placeholder="Usuário" id="usuario" name="usuario" type="email" class="usuario">
+                                <div id="erroUsuario"></div>
+                        </div>
+                        <div class = "input-wrapper">
+                            <input placeholder="Senha" id="senha" name="Senha" type="password" class="senha">
+                            <div id="erroSenha"></div>
+                        </div>
+                            <div class="botao-acessar">
+                            <button onclick="validarForm()"><strong>Acessar</strong></button>
+                        </div>
+                </div>
+            </div>  
+        </div>
+    </div>         
+    </main>
+    <!--JavaScript-->
+    <script type="text/JavaScript" src="login.js"></script>
+</body>
+</html>
