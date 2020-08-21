@@ -10,396 +10,395 @@
     <link rel="stylesheet" type="text/css" href="css/imagens.css">
     <link rel="stylesheet" type="text/css" href="css/imagensMobile.css">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,700;1,500&display=swap" rel="stylesheet">
-    <!-- Implementação Javascript-->
-    <script type="text/javascript" src="./js/imagens.js" defer></script>
 
-    <body>
-        <main>
-            <!--==========MENU=========-->
-            <div class="container">
-                <div class="logo">
-                    <a href="./index.html" target="_parent">
-                        <img src="svg/logo.svg" alt="HashtagFinder">
-                    </a>
-                </div>
-                <div class="menu">
-                    <a class="sobre" href="./sobre.html"><img src="svg/icon-info-circle.svg" alt="Sobre">sobre</a>
-                    <a class="login" href="./Login.html"><img src="svg/icon-user-alt.svg" alt="Login">login</a>
-                </div>
+<head>
+<body>
+    <main>
+        <!--==========MENU=========-->
+        <div class="container">
+            <div class="logo">
+                <a href="./index.html" target="_parent">
+                    <img src="svg/logo.svg" alt="HashtagFinder">
+                </a>
             </div>
-            <!--==========HERO BANNER- / -BUSCA==========-->
-            <section class="hero-image">
-                <div class="hero-image-drop">
+            <div class="menu">
+                <a class="sobre" href="./sobre.html"><img src="svg/icon-info-circle.svg" alt="Sobre">sobre</a>
+                <a class="login" href="./Login.html"><img src="svg/icon-user-alt.svg" alt="Login">login</a>
+            </div>
+        </div>
+        <!--==========HERO BANNER- / -BUSCA==========-->
+        <section class="hero-image">
+            <div class="hero-image-drop">
 
-                </div>
-                <section class="hero-text">
-                    <h1>Encontre hashtags<br>de maneira fácil.</h1>
-                    <p>Digite o que deseja no campo de buscas e <br>confira os resultados do Twitter abaixo</p>
-                </section>
-                <section class="hero-busca">
-                    <input type="text" id="txt-busca" onfocus="limparHashtag()" class="input" placeholder="Buscar...">
-                    <!--CAMPO PARA JS - MSG DE ERRO-->
-                    <!--BuscaPrivsoria- onkeydown-->
-                    <div id="message"></div>
-                </section>
+            </div>
+            <section class="hero-text">
+                <h1>Encontre hashtags<br>de maneira fácil.</h1>
+                <p>Digite o que deseja no campo de buscas e <br>confira os resultados do Twitter abaixo</p>
             </section>
+            <section class="hero-busca">
+                <input type="text" id="txt-busca" onfocus="limparHashtag()" class="input" placeholder="Buscar...">
+                <!--CAMPO PARA JS - MSG DE ERRO-->
+                <!--BuscaPrivsoria- onkeydown-->
+                <div id="message"></div>
+            </section>
+        </section>
 
-            <!--=====CONTAINER TWEETS / IMAGENS====-->
-            <div class="containerGrupo">
-                <h3>
-                    <div class="desktop ">Exibindo os 10 resultados mais recentes para #natureza</div>
-                    <div class="semResultado">Não encontramos resultados para #palavra</div>
-                </h3>
-                <!-- aparecer no mobile -->
-                <div class="mobile ">
-                    <div id="tweetMobile" class="botaoAbas botaoAbasSelecionado" onclick="esconderImagens()">Tweets</div>
-                    <div id="imagensMobile" class="botaoAbas" onclick="esconderTweets()">Imagens</div>
-                    <div class="linha"></div>
-                </div>
+        <!--=====CONTAINER TWEETS / IMAGENS====-->
+        <div class="containerGrupo">
+            <h3>
+                <div class="desktop ">Exibindo os 10 resultados mais recentes para #natureza</div>
+                <div class="semResultado">Não encontramos resultados para #palavra</div>
+            </h3>
+            <!-- aparecer no mobile -->
+            <div class="mobile ">
+                <div id="tweetMobile" class="botaoAbas botaoAbasSelecionado" onclick="esconderImagens()">Tweets</div>
+                <div id="imagensMobile" class="botaoAbas" onclick="esconderTweets()">Imagens</div>
+                <div class="linha"></div>
+            </div>
 
-                <!-- Container que segura todas as divs de imagens relacionadas na pesquisadas -->
-                <div id="imagens" class="containerGaleria">
-                    <div class="coluna">
-                        <div class="containerImagem">
-                            <a target="_blank">
-                                <img src="imagens/top10/photo-01.jpg" alt="imagem do mar" onclick="cliqueModal(this)">
-                                <div class="degrade"></div>
+            <!-- Container que segura todas as divs de imagens relacionadas na pesquisadas -->
+            <div id="imagens" class="containerGaleria">
+                <div class="coluna">
+                    <div class="containerImagem">
+                        <a target="_blank">
+                            <img src="imagens/top10/photo-01.jpg" alt="imagem do mar" onclick="cliqueModal(this)">
+                            <div class="degrade"></div>
+                            <div class="texto">
+                                <div class="textoPostadoPor">Postado por:</div>
+                                <div class="textoTwitterUser">@twitterusername</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="containerImagem">
+                        <a target="_blank">
+                            <img src="imagens/top10/photo-03.jpg" alt="foto aérea de uma floresta" onclick="cliqueModal(this)">
+                            <div class="degrade"></div>
+                            <div class="containerTexto">
                                 <div class="texto">
                                     <div class="textoPostadoPor">Postado por:</div>
                                     <div class="textoTwitterUser">@twitterusername</div>
                                 </div>
-                            </a>
-                        </div>
-                        <div class="containerImagem">
-                            <a target="_blank">
-                                <img src="imagens/top10/photo-03.jpg" alt="foto aérea de uma floresta" onclick="cliqueModal(this)">
-                                <div class="degrade"></div>
-                                <div class="containerTexto">
-                                    <div class="texto">
-                                        <div class="textoPostadoPor">Postado por:</div>
-                                        <div class="textoTwitterUser">@twitterusername</div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="containerImagem">
-                            <a target="_blank">
-                                <img src="imagens/top10/photo-05.jpg" alt="imagem aérea de vilas" onclick="cliqueModal(this)">
-                                <div class="degrade"></div>
-                                <div class="containerTexto">
-                                    <div class="texto">
-                                        <div class="textoPostadoPor">Postado por:</div>
-                                        <div class="textoTwitterUser">@twitterusername</div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="containerImagem">
-                            <a target="_blank">
-                                <img src="imagens/top10/photo-07.jpg" alt="imagem de floresta" onclick="cliqueModal(this)">
-                                <div class="degrade"></div>
-                                <div class="containerTexto">
-                                    <div class="texto">
-                                        <div class="textoPostadoPor">Postado por:</div>
-                                        <div class="textoTwitterUser">@twitterusername</div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="containerImagem">
-                            <a target="_blank">
-                                <img src="imagens/top10/photo-09.jpg" alt="imagem de aguas-vivas" onclick="cliqueModal(this)">
-                                <div class="degrade"></div>
-                                <div class="containerTexto">
-                                    <div class="texto">
-                                        <div class="textoPostadoPor">Postado por:</div>
-                                        <div class="textoTwitterUser">@twitterusername</div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
+                            </div>
+                        </a>
                     </div>
-                    <div class="coluna" id="coluna2">
-                        <div class="containerImagem">
-                            <a target="_blank">
-                                <img src="imagens/top10/photo-02.jpg" alt="imagem de um vale" onclick="cliqueModal(this)">
-                                <div class="degrade"></div>
-                                <div class="containerTexto">
-                                    <div class="texto">
-                                        <div class="textoPostadoPor">Postado por:</div>
-                                        <div class="textoTwitterUser">@twitterusername</div>
-                                    </div>
+                    <div class="containerImagem">
+                        <a target="_blank">
+                            <img src="imagens/top10/photo-05.jpg" alt="imagem aérea de vilas" onclick="cliqueModal(this)">
+                            <div class="degrade"></div>
+                            <div class="containerTexto">
+                                <div class="texto">
+                                    <div class="textoPostadoPor">Postado por:</div>
+                                    <div class="textoTwitterUser">@twitterusername</div>
                                 </div>
-                            </a>
-                        </div>
-                        <div class="containerImagem">
-                            <a target="_blank">
-                                <img src="imagens/top10/photo-04.jpg" alt="imagem de pinheiros" onclick="cliqueModal(this)">
-                                <div class="degrade"></div>
-                                <div class="containerTexto">
-                                    <div class="texto">
-                                        <div class="textoPostadoPor">Postado por:</div>
-                                        <div class="textoTwitterUser">@twitterusername</div>
-                                    </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="containerImagem">
+                        <a target="_blank">
+                            <img src="imagens/top10/photo-07.jpg" alt="imagem de floresta" onclick="cliqueModal(this)">
+                            <div class="degrade"></div>
+                            <div class="containerTexto">
+                                <div class="texto">
+                                    <div class="textoPostadoPor">Postado por:</div>
+                                    <div class="textoTwitterUser">@twitterusername</div>
                                 </div>
-                            </a>
-                        </div>
-                        <div class="containerImagem">
-                            <a target="_blank">
-                                <img src="imagens/top10/photo-06.jpg" alt="imagem de cachoeiras" onclick="cliqueModal(this)">
-                                <div class="degrade"></div>
-                                <div class="containerTexto">
-                                    <div class="texto">
-                                        <div class="textoPostadoPor">Postado por:</div>
-                                        <div class="textoTwitterUser">@twitterusername</div>
-                                    </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="containerImagem">
+                        <a target="_blank">
+                            <img src="imagens/top10/photo-09.jpg" alt="imagem de aguas-vivas" onclick="cliqueModal(this)">
+                            <div class="degrade"></div>
+                            <div class="containerTexto">
+                                <div class="texto">
+                                    <div class="textoPostadoPor">Postado por:</div>
+                                    <div class="textoTwitterUser">@twitterusername</div>
                                 </div>
-                            </a>
-                        </div>
-                        <div class="containerImagem">
-                            <a target="_blank">
-                                <img src="imagens/top10/photo-08.jpg" alt="imagem de caminhada no deserto" onclick="cliqueModal(this)">
-                                <div class="degrade"></div>
-                                <div class="containerTexto">
-                                    <div class="texto">
-                                        <div class="textoPostadoPor">Postado por:</div>
-                                        <div class="textoTwitterUser">@twitterusername</div>
-                                    </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="coluna" id="coluna2">
+                    <div class="containerImagem">
+                        <a target="_blank">
+                            <img src="imagens/top10/photo-02.jpg" alt="imagem de um vale" onclick="cliqueModal(this)">
+                            <div class="degrade"></div>
+                            <div class="containerTexto">
+                                <div class="texto">
+                                    <div class="textoPostadoPor">Postado por:</div>
+                                    <div class="textoTwitterUser">@twitterusername</div>
                                 </div>
-                            </a>
-                        </div>
-                        <div class="containerImagem">
-                            <a target="_blank">
-                                <img src="imagens/top10/photo-10.jpg" alt="imagem de bambuzal" onclick="cliqueModal(this)">
-                                <div class="degrade"></div>
-                                <div class="containerTexto">
-                                    <div class="texto">
-                                        <div class="textoPostadoPor">Postado por:</div>
-                                        <div class="textoTwitterUser">@twitterusername</div>
-                                    </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="containerImagem">
+                        <a target="_blank">
+                            <img src="imagens/top10/photo-04.jpg" alt="imagem de pinheiros" onclick="cliqueModal(this)">
+                            <div class="degrade"></div>
+                            <div class="containerTexto">
+                                <div class="texto">
+                                    <div class="textoPostadoPor">Postado por:</div>
+                                    <div class="textoTwitterUser">@twitterusername</div>
                                 </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="containerImagem">
+                        <a target="_blank">
+                            <img src="imagens/top10/photo-06.jpg" alt="imagem de cachoeiras" onclick="cliqueModal(this)">
+                            <div class="degrade"></div>
+                            <div class="containerTexto">
+                                <div class="texto">
+                                    <div class="textoPostadoPor">Postado por:</div>
+                                    <div class="textoTwitterUser">@twitterusername</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="containerImagem">
+                        <a target="_blank">
+                            <img src="imagens/top10/photo-08.jpg" alt="imagem de caminhada no deserto" onclick="cliqueModal(this)">
+                            <div class="degrade"></div>
+                            <div class="containerTexto">
+                                <div class="texto">
+                                    <div class="textoPostadoPor">Postado por:</div>
+                                    <div class="textoTwitterUser">@twitterusername</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="containerImagem">
+                        <a target="_blank">
+                            <img src="imagens/top10/photo-10.jpg" alt="imagem de bambuzal" onclick="cliqueModal(this)">
+                            <div class="degrade"></div>
+                            <div class="containerTexto">
+                                <div class="texto">
+                                    <div class="textoPostadoPor">Postado por:</div>
+                                    <div class="textoTwitterUser">@twitterusername</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!----------------------------------------- Container TWEETS  ------------------------------------------------->
+            <!----------------------------------------- Container que segura todas as divs dos TWEETS relacionados a pesquisa ------------------------------------------------->
+            <div id="tweets" class="containerGaleriaTweets" id="Tweets1">
+                <!-- Container 1 -->
+                <div class="containerTweets" id="Tweets1">
+                    <div class="grupoTweets">
+                        <img src="imagens/fotos-perfis/fashion-photography-of-woman-hands-on-chin-with-glitter-1081685_Easy-Resize.com.jpg" alt="imagem de mulher com a mão no queixo" />
+                        <div class="containerTextosTwitter">
+                            <div class="containerUser">
+                                <div class="userName">UserName</div>
+                                <div class="twitterUserName">@twitterusername</div>
+                            </div>
+                            <div class="textoTweet">
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt...
+                            </div>
+                            <a target="_blank" href="" class="linkTwitter">
+                                <div>Ver mais no Twitter</div>
                             </a>
                         </div>
                     </div>
                 </div>
+                <!-- Container 2 -->
+                <div class="containerTweets" id="Tweets2">
+                    <div class="grupoTweets">
+                        <img src="imagens/fotos-perfis/adult-blur-boy-daylight-428361_Easy-Resize.com.jpg" alt="imagem de mulher com a mão no queixo" />
 
-                <!----------------------------------------- Container TWEETS  ------------------------------------------------->
-                <!----------------------------------------- Container que segura todas as divs dos TWEETS relacionados a pesquisa ------------------------------------------------->
-                <div id="tweets" class="containerGaleriaTweets" id="Tweets1">
-                    <!-- Container 1 -->
-                    <div class="containerTweets" id="Tweets1">
-                        <div class="grupoTweets">
-                            <img src="imagens/fotos-perfis/fashion-photography-of-woman-hands-on-chin-with-glitter-1081685_Easy-Resize.com.jpg" alt="imagem de mulher com a mão no queixo" />
-                            <div class="containerTextosTwitter">
-                                <div class="containerUser">
-                                    <div class="userName">UserName</div>
-                                    <div class="twitterUserName">@twitterusername</div>
-                                </div>
-                                <div class="textoTweet">
-                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt...
-                                </div>
-                                <a target="_blank" href="" class="linkTwitter">
-                                    <div>Ver mais no Twitter</div>
-                                </a>
+                        <div class="containerTextosTwitter">
+                            <div class="containerUser">
+                                <div class="userName">UserName</div>
+                                <div class="twitterUserName">@twitterusername</div>
                             </div>
+                            <div class="textoTweet">
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat...
+                            </div>
+                            <a target="_blank" href="" class="linkTwitter">
+                                <div>Ver mais no Twitter</div>
+                            </a>
                         </div>
                     </div>
-                    <!-- Container 2 -->
-                    <div class="containerTweets" id="Tweets2">
-                        <div class="grupoTweets">
-                            <img src="imagens/fotos-perfis/adult-blur-boy-daylight-428361_Easy-Resize.com.jpg" alt="imagem de mulher com a mão no queixo" />
+                </div>
+                <!-- Container 3 -->
+                <div class="containerTweets" id="Tweets3">
 
-                            <div class="containerTextosTwitter">
-                                <div class="containerUser">
-                                    <div class="userName">UserName</div>
-                                    <div class="twitterUserName">@twitterusername</div>
-                                </div>
-                                <div class="textoTweet">
-                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat...
-                                </div>
-                                <a target="_blank" href="" class="linkTwitter">
-                                    <div>Ver mais no Twitter</div>
-                                </a>
+                    <div class="grupoTweets">
+                        <img src="imagens/fotos-perfis/grayscale-photo-of-a-man-near-wall-1370750_Easy-Resize.com.jpg" alt="imagem de mulher com a mão no queixo" />
+
+                        <div class="containerTextosTwitter">
+                            <div class="containerUser">
+                                <div class="userName">UserName</div>
+                                <div class="twitterUserName">@twitterusername</div>
                             </div>
+                            <div class="textoTweet">
+                                Lorem ipsum dolor sit amet, consetetur, sed diam nonumy eirmod tempor invidunt ut labore et dolore...
+                            </div>
+                            <a target="_blank" href="" class="linkTwitter">
+                                <div>Ver mais no Twitter</div>
+                            </a>
                         </div>
                     </div>
-                    <!-- Container 3 -->
-                    <div class="containerTweets" id="Tweets3">
+                </div>
+                <!-- Container 4 -->
+                <div class="containerTweets" id="Tweets4">
+                    <div class="grupoTweets">
+                        <img src="imagens/fotos-perfis/looking-up-woman-wearing-blue-v-neck-top-1674752_Easy-Resize.com.jpg" alt="imagem de mulher com a mão no queixo" />
 
-                        <div class="grupoTweets">
-                            <img src="imagens/fotos-perfis/grayscale-photo-of-a-man-near-wall-1370750_Easy-Resize.com.jpg" alt="imagem de mulher com a mão no queixo" />
-
-                            <div class="containerTextosTwitter">
-                                <div class="containerUser">
-                                    <div class="userName">UserName</div>
-                                    <div class="twitterUserName">@twitterusername</div>
-                                </div>
-                                <div class="textoTweet">
-                                    Lorem ipsum dolor sit amet, consetetur, sed diam nonumy eirmod tempor invidunt ut labore et dolore...
-                                </div>
-                                <a target="_blank" href="" class="linkTwitter">
-                                    <div>Ver mais no Twitter</div>
-                                </a>
+                        <div class="containerTextosTwitter">
+                            <div class="containerUser">
+                                <div class="userName">UserName</div>
+                                <div class="twitterUserName">@twitterusername</div>
                             </div>
+                            <div class="textoTweet">
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt...
+                            </div>
+                            <a target="_blank" href="" class="linkTwitter">
+                                <div>Ver mais no Twitter</div>
+                            </a>
                         </div>
                     </div>
-                    <!-- Container 4 -->
-                    <div class="containerTweets" id="Tweets4">
-                        <div class="grupoTweets">
-                            <img src="imagens/fotos-perfis/looking-up-woman-wearing-blue-v-neck-top-1674752_Easy-Resize.com.jpg" alt="imagem de mulher com a mão no queixo" />
+                </div>
+                <!-- Container 5 -->
+                <div class="containerTweets" id="Tweets5">
+                    <div class="grupoTweets">
+                        <img src="imagens/fotos-perfis/men-s-blue-dress-shirt-1043471_Easy-Resize.com.jpg" alt="imagem de mulher com a mão no queixo" />
 
-                            <div class="containerTextosTwitter">
-                                <div class="containerUser">
-                                    <div class="userName">UserName</div>
-                                    <div class="twitterUserName">@twitterusername</div>
-                                </div>
-                                <div class="textoTweet">
-                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt...
-                                </div>
-                                <a target="_blank" href="" class="linkTwitter">
-                                    <div>Ver mais no Twitter</div>
-                                </a>
+                        <div class="containerTextosTwitter">
+                            <div class="containerUser">
+                                <div class="userName">UserName</div>
+                                <div class="twitterUserName">@twitterusername</div>
                             </div>
+                            <div class="textoTweet">
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt...
+                            </div>
+                            <a target="_blank" href="" class="linkTwitter">
+                                <div>Ver mais no Twitter</div>
+                            </a>
                         </div>
                     </div>
-                    <!-- Container 5 -->
-                    <div class="containerTweets" id="Tweets5">
-                        <div class="grupoTweets">
-                            <img src="imagens/fotos-perfis/men-s-blue-dress-shirt-1043471_Easy-Resize.com.jpg" alt="imagem de mulher com a mão no queixo" />
 
-                            <div class="containerTextosTwitter">
-                                <div class="containerUser">
-                                    <div class="userName">UserName</div>
-                                    <div class="twitterUserName">@twitterusername</div>
-                                </div>
-                                <div class="textoTweet">
-                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt...
-                                </div>
-                                <a target="_blank" href="" class="linkTwitter">
-                                    <div>Ver mais no Twitter</div>
-                                </a>
+                </div>
+                <!-- Container 6 -->
+                <div class="containerTweets" id="Tweets6">
+                    <div class="grupoTweets">
+                        <img src="imagens/fotos-perfis/monochrome-photo-of-man-smiling-1484794_Easy-Resize.com.jpg" alt="imagem de mulher com a mão no queixo" />
+
+                        <div class="containerTextosTwitter">
+                            <div class="containerUser">
+                                <div class="userName">UserName</div>
+                                <div class="twitterUserName">@twitterusername</div>
                             </div>
-                        </div>
-
-                    </div>
-                    <!-- Container 6 -->
-                    <div class="containerTweets" id="Tweets6">
-                        <div class="grupoTweets">
-                            <img src="imagens/fotos-perfis/monochrome-photo-of-man-smiling-1484794_Easy-Resize.com.jpg" alt="imagem de mulher com a mão no queixo" />
-
-                            <div class="containerTextosTwitter">
-                                <div class="containerUser">
-                                    <div class="userName">UserName</div>
-                                    <div class="twitterUserName">@twitterusername</div>
-                                </div>
-                                <div class="textoTweet">
-                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt...
-                                </div>
-                                <a target="_blank" href="" class="linkTwitter">
-                                    <div>Ver mais no Twitter</div>
-                                </a>
+                            <div class="textoTweet">
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt...
                             </div>
+                            <a target="_blank" href="" class="linkTwitter">
+                                <div>Ver mais no Twitter</div>
+                            </a>
                         </div>
                     </div>
-                    <!-- Container 7 -->
-                    <div class="containerTweets" id="Tweets7">
-                        <div class="grupoTweets">
-                            <img src="imagens/fotos-perfis/monochrome-photo-of-man-smiling-1484794_Easy-Resize.com.jpg" alt="imagem de mulher com a mão no queixo" />
+                </div>
+                <!-- Container 7 -->
+                <div class="containerTweets" id="Tweets7">
+                    <div class="grupoTweets">
+                        <img src="imagens/fotos-perfis/monochrome-photo-of-man-smiling-1484794_Easy-Resize.com.jpg" alt="imagem de mulher com a mão no queixo" />
 
-                            <div class="containerTextosTwitter">
-                                <div class="containerUser">
-                                    <div class="userName">UserName</div>
-                                    <div class="twitterUserName">@twitterusername</div>
-                                </div>
-                                <div class="textoTweet">
-                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt...
-                                </div>
-                                <a target="_blank" href="" class="linkTwitter">
-                                    <div>Ver mais no Twitter</div>
-                                </a>
+                        <div class="containerTextosTwitter">
+                            <div class="containerUser">
+                                <div class="userName">UserName</div>
+                                <div class="twitterUserName">@twitterusername</div>
                             </div>
+                            <div class="textoTweet">
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt...
+                            </div>
+                            <a target="_blank" href="" class="linkTwitter">
+                                <div>Ver mais no Twitter</div>
+                            </a>
                         </div>
                     </div>
-                    <!-- Container 8 -->
-                    <div class="containerTweets" id="Tweets8">
-                        <div class="grupoTweets">
-                            <img src="imagens/fotos-perfis/monochrome-photo-of-man-smiling-1484794_Easy-Resize.com.jpg" alt="imagem de mulher com a mão no queixo" />
+                </div>
+                <!-- Container 8 -->
+                <div class="containerTweets" id="Tweets8">
+                    <div class="grupoTweets">
+                        <img src="imagens/fotos-perfis/monochrome-photo-of-man-smiling-1484794_Easy-Resize.com.jpg" alt="imagem de mulher com a mão no queixo" />
 
-                            <div class="containerTextosTwitter">
-                                <div class="containerUser">
-                                    <div class="userName">UserName</div>
-                                    <div class="twitterUserName">@twitterusername</div>
-                                </div>
-                                <div class="textoTweet">
-                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt...
-                                </div>
-                                <a target="_blank" href="" class="linkTwitter">
-                                    <div>Ver mais no Twitter</div>
-                                </a>
+                        <div class="containerTextosTwitter">
+                            <div class="containerUser">
+                                <div class="userName">UserName</div>
+                                <div class="twitterUserName">@twitterusername</div>
                             </div>
+                            <div class="textoTweet">
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt...
+                            </div>
+                            <a target="_blank" href="" class="linkTwitter">
+                                <div>Ver mais no Twitter</div>
+                            </a>
                         </div>
                     </div>
-                    <!-- Container 9 -->
-                    <div class="containerTweets" id="Tweets9">
-                        <div class="grupoTweets">
-                            <img src="imagens/fotos-perfis/monochrome-photo-of-man-smiling-1484794_Easy-Resize.com.jpg" alt="imagem de mulher com a mão no queixo" />
-                            <div class="containerTextosTwitter">
-                                <div class="containerUser">
-                                    <div class="userName">UserName</div>
-                                    <div class="twitterUserName">@twitterusername</div>
-                                </div>
-                                <div class="textoTweet">
-                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt...
-                                </div>
-                                <a target="_blank" href="" class="linkTwitter">
-                                    <div>Ver mais no Twitter</div>
-                                </a>
+                </div>
+                <!-- Container 9 -->
+                <div class="containerTweets" id="Tweets9">
+                    <div class="grupoTweets">
+                        <img src="imagens/fotos-perfis/monochrome-photo-of-man-smiling-1484794_Easy-Resize.com.jpg" alt="imagem de mulher com a mão no queixo" />
+                        <div class="containerTextosTwitter">
+                            <div class="containerUser">
+                                <div class="userName">UserName</div>
+                                <div class="twitterUserName">@twitterusername</div>
                             </div>
+                            <div class="textoTweet">
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt...
+                            </div>
+                            <a target="_blank" href="" class="linkTwitter">
+                                <div>Ver mais no Twitter</div>
+                            </a>
                         </div>
                     </div>
-                    <!-- Container 10 -->
-                    <div class="containerTweets" id="Tweets10">
-                        <div class="grupoTweets">
-                            <img src="imagens/fotos-perfis/monochrome-photo-of-man-smiling-1484794_Easy-Resize.com.jpg" alt="imagem de mulher com a mão no queixo" />
-                            <div class="containerTextosTwitter">
-                                <div class="containerUser">
-                                    <div class="userName">UserName</div>
-                                    <div class="twitterUserName">@twitterusername</div>
-                                </div>
-                                <div class="textoTweet">
-                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt...
-                                </div>
-                                <a target="_blank" href="" class="linkTwitter">
-                                    <div>Ver mais no Twitter</div>
-                                </a>
+                </div>
+                <!-- Container 10 -->
+                <div class="containerTweets" id="Tweets10">
+                    <div class="grupoTweets">
+                        <img src="imagens/fotos-perfis/monochrome-photo-of-man-smiling-1484794_Easy-Resize.com.jpg" alt="imagem de mulher com a mão no queixo" />
+                        <div class="containerTextosTwitter">
+                            <div class="containerUser">
+                                <div class="userName">UserName</div>
+                                <div class="twitterUserName">@twitterusername</div>
                             </div>
+                            <div class="textoTweet">
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt...
+                            </div>
+                            <a target="_blank" href="" class="linkTwitter">
+                                <div>Ver mais no Twitter</div>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
-            </div>
-            <!--==========RODAPE==========-->
-            <footer id="rodape">
-                <div class="txtRodape">
-                    <p>@Cocreare 2020. Todos os direitos reservados</p>
-                </div>
-            </footer>
-        </main>
-        <div id="janela-modal" class="janela-modal esconde-janela-modal">
-            <span id="btn-fechar" class="fechar-modal">X</span>
-            <img id="img-modal" class="img-modal" src="" alt="">
-            <a>
-                <span id="visitar-tweet" class="visitar-tweet">Ver no Twitter</span>
-            </a>
-
         </div>
-        <!--JavaScript-->
+        </div>
+        <!--==========RODAPE==========-->
+        <footer id="rodape">
+            <div class="txtRodape">
+                <p>@Cocreare 2020. Todos os direitos reservados</p>
+            </div>
+        </footer>
+    </main>
+    <div id="janela-modal" class="janela-modal esconde-janela-modal">
+        <span id="btn-fechar" class="fechar-modal">X</span>
+        <img id="img-modal" class="img-modal" src="" alt="">
+        <a>
+            <span id="visitar-tweet" class="visitar-tweet">Ver no Twitter</span>
+        </a>
 
-        <!--SCRIPT CAMPO DE BUSCA-->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script type="text/JavaScript" src="js/index.js"></script>
-        <!--Script com "defer" para que seja carregado depois da renderização da página (obs. "defer" não funciona com scripts inline)-->
-        <!--<script type="text/JavaScript" src="js/tweetScroll.js" defer></script>
-        
+    </div>
+    <!--JavaScript-->
+    <script type="text/javascript" src="./js/imagens.js" defer></script>
+    <!--SCRIPT CAMPO DE BUSCA-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/JavaScript" src="js/index.js"></script>
+
+    <!--Script com "defer" para que seja carregado depois da renderização da página (obs. "defer" não funciona com scripts inline)-->
+    <!--<script type="text/JavaScript" src="js/tweetScroll.js" defer></script> -->      
 </body>
 </html>
