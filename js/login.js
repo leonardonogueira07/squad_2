@@ -8,7 +8,7 @@ function validarForm() {
     var erroSenha = document.getElementById("erroSenha");
 
     if(nome.value =="academy@cocreare.com.br" && senha.value =="123456"){
-        window.location.href = "buscas.html";
+        window.location.href = "historico-buscas.html";
         console.log("FUNCIONA");
         return true;
     }

@@ -93,6 +93,7 @@
     border-left: 0px;
     border-right: 0px;
     border-bottom: 0px;
+    cursor: pointer;
 }
 .wrap-input{
     margin-top: 5px;
