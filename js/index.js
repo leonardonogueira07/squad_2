@@ -19,7 +19,7 @@ window.onload = function() {
    };   
 } 
 */
-//CAMPO BUSCA VALIDAÇÃO COM TECLA ENTER - 
+//CAMPO BUSCA VALIDAÇÃO COM TECLA ENTER - # 
 document.getElementById('txt-busca').onkeypress = function searchKeyPress(event) {
   if (event.keyCode == 13) {
       document.getElementById('txt-busca').click();
