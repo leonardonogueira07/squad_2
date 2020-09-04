@@ -28,11 +28,7 @@ body {
         background-position:  0% 18vw, 0% -2vw;
     }
 }
-
-
 /* ----------------------- BLOCO SOBRE-PROJETO ----------------------- */
-
-/*  Bloco sobre-projeto */
 .sobre-projeto{
     /* Posicionamento*/
     margin: 13vw 7.6vw 10vw 7.2vw;
@@ -41,7 +37,7 @@ body {
     justify-content: space-between;
     flex-wrap: wrap;
 }
-    /* Ajuste de responsividade */
+/* Ajuste de responsividade */
 @media only screen and (max-width: 1200px) {
     .sobre-projeto {
         /* Fundos: */
@@ -50,55 +46,37 @@ body {
     }
 }
 /* Título sobre-projeto */
-.sobre-projeto__titulo {
-
-    /* Texto */
-    font-weight: bolder;
-    font-size: 4.2vw;
-    /* Altura da linha */
-    line-height: 5.6vw;   
-
-    /* Posicionamento */
-    margin: 0 0 2vw; 
-
-    /* Cor */
-    color: #FFFFFF;    
+.sobre-projeto__titulo {    
+    font-weight: bolder; /* Texto */
+    font-size: 4.2vw;   
+    line-height: 5.6vw;  /* Altura da linha */    
+    margin: 0 0 2vw;/* Posicionamento */    
+    color: #FFFFFF; /* Cor */
 }
 /* Ajuste de responsividade */
 @media only screen and (max-width: 1200px) {
-    .sobre-projeto__titulo {
-        /* Texto */
-    font-size: 33px;
-    /* Altura da linha */
-    line-height: 33px;   
- /* Posicionamento */
-    margin: 54px 0 31px;         
+    .sobre-projeto__titulo {    
+    font-size: 33px; /* Texto */    
+    line-height: 33px;   /* Altura da linha */   
+    margin: 0 0 31px;  /* Posicionamento */        
     }
 }
 /* Descrição do projeto */
-.sobre-projeto__texto {
-
-/* Tamanho */
-    width: 39.2vw;      
-    /* Texto */
-    font-size: 1vw;  
-    /* Altura da linha */
-    line-height: 1.9vw;
+.sobre-projeto__texto {    
+    width: 39.2vw;  /* Tamanho */    
+    font-size: 1vw;  /* Texto */    
+    line-height: 1.9vw; /* Altura da linha */
 }
 /* Ajuste de Responsividade */
 @media only screen and (max-width: 1200px) {
     .sobre-projeto__texto {
-        /* Tamanho */
-    width: 100%; 
-        /* Texto */
-    font-size: 15px;
-    /* Altura da linha */
-    line-height: 26px;               
+    width: 100%;         /* Tamanho */        
+    font-size: 15px; /* Texto */    
+    line-height: 26px;  /* Altura da linha */             
     }
 }
 /* Foto-hero */
 .sobre-projeto__imagem {
-
     /* Posicionamento relação à largura da tela */
     width: 33vw;    
     margin-top: 2.5vw;
@@ -113,45 +91,35 @@ body {
     }
 }
 /* ----------------------- BLOCO EQUIPE ----------------------- */
-
-/* Bloco da equipe */
 .sobre-equipe {
-
-    /* Margens */
     margin: 0 3.5vw 64px;
 }
 /* Ajuste de responsividade */
 @media only screen and (min-width: 1200px) {
     .sobre-equipe {
-        margin: 0 9vw 7vw;
+        margin: 0 0 7.5vw;
     }
 }
 /* Título */
-.sobre-equipe__titulo {
-
-    /* Fonte */
-    font-size: 27px;
-
-    /* Tamanho */
-    margin: 0 4vw 45px;
+.sobre-equipe__titulo {   
+    font-size: 27px;  /* Fonte */    
+    margin: 0 3.5vw 0 10.2vw; /* Tamanho */
     line-height: 3vw;
 }
 /* Ajuste de responsividade */
 @media only screen and (min-width: 1200px) {
-    .sobre-equipe__titulo {
-        /* Fonte */
-        font-size: 2.8vw;
-        /* Margem */
-        margin: 0 2vw 5.5vw;
+    .sobre-equipe__titulo {        
+        font-size: 2.8vw; /* Fonte */        
+        margin: 0 9vw 5.5vw; /* Margem */
     }
 }
 /* Lista de membros */
 .sobre-equipe__membros {
-
     /* Disposição */
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-wrap: wrap;
+    margin: 4vw 7.6vw 10vw 7.2vw;
 }
 /* Disposição - Ajuste de responsividade */
 @media only screen and (min-width: 1200px) {
@@ -159,24 +127,18 @@ body {
         justify-content: center;
     }
 }
-
-
 /* ----------------------- BLOCO SOBRE-MEMBRO ----------------------- */
-
 /* Bloco dos perfis */
 .sobre-membro {
-
     /* Cor e forma */
     background-color: #0B1A49;
     border: solid 1px #FFFFFF24;
     border-radius: 10px;
     box-shadow: 0px 5px 10px #5538EE14;
-
     /* Tamanho */
     width: 400px;
     max-width: 100%;
     margin: 0 2% 46px;
-
     /* Texto */
     text-align: center;
 }
@@ -189,7 +151,6 @@ body {
 }
 /* Foto de perfil */
 .sobre-membro__imagem {
-
     /* Tamanho e forma */
     width: 204px;
     max-width: 43vw;
@@ -197,7 +158,6 @@ body {
     max-height: 43vw;
     object-fit: cover;
     border-radius: 50%;
-
     /* Margem */
     margin: 36px 4.5vw 22px;
 }
@@ -211,11 +171,9 @@ body {
 }
 /* Nome */
 .sobre-membro__nome {
-
     /* Fonte */
     color: #72EFDB;
     font-size: 28px;
-
     /* Margem */
     margin: 0 .75vw 22px;
 }
@@ -228,12 +186,10 @@ body {
 }
 /* Descrição */
 .sobre-membro__texto {
-
     /* Fonte */
     font-size: 19px;
     font-weight: 300;
     color: #D9D9D9;
-
     /* Espaçamento */
     line-height: 25px;
     margin: 0 36px 24px;
@@ -248,12 +204,10 @@ body {
 }
 /* Lista de contatos */
 .sobre-membro__contatos {
-
     /* Disposição */
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     /* Tamanho */
     width: 34%;
     margin: 0 33% 38px;
@@ -267,7 +221,6 @@ body {
 }
 /* Ícones de contato */
 .sobre-membro__link {
-
     /* Tamanho */
     height: 24px;
 }
